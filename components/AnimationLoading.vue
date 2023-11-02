@@ -1,0 +1,66 @@
+<script setup lang="ts">
+import Ani from "~/svgs/ani.svg";
+import { gsap } from "gsap";
+import type { TimelineLite } from "gsap";
+
+const ani = ref(null);
+const sc1 = ref(null);
+const sc2 = ref(null);
+const currentScreen = ref(0);
+
+onMounted(() => {
+  const tl = gsap.timeline({});
+  const animation = () =>
+    tl
+      .set(ani.value, {
+        translateX: "100%",
+      })
+      .set(sc1.value, {
+        display: "flex",
+      })
+      .set(sc2.value, {
+        display: "none",
+      })
+      .to(ani.value, {
+        translateX: "0%",
+        duration: 0.5,
+        ease: "linear",
+      })
+      .set(sc1.value, {
+        display: "none",
+      })
+      .set(sc2.value, {
+        display: "flex",
+      })
+      .to(ani.value, {
+        translateX: "-100%",
+        duration: 0.5,
+        ease: "linear",
+      });
+
+  setTimeout(() => {
+    animation();
+  }, 5000);
+});
+</script>
+
+<template>
+  <div class="flex w-screen h-screen overflow-hidden">
+    <div ref="ani" class="fixed left-0 translate-x-[150%]">
+      <Ani class="!w-auto !h-screen" />
+    </div>
+    <div
+      ref="sc1"
+      class="!w-screen !h-screen flex justify-center items-center font-au text-[3rem] tracking-widest"
+    >
+      CRUNKUZ
+    </div>
+
+    <div
+      ref="sc2"
+      class="!w-screen !h-screen font-cuz uppercase justify-center items-center hidden font-bold"
+    >
+      _This site is under development
+    </div>
+  </div>
+</template>

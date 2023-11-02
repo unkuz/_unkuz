@@ -1,9 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AnimationLoading from "../components/AnimationLoading.vue";
+</script>
 
 <template>
-  <div
-    class="w-screen h-screen flex justify-center items-center font-au text-[3rem]"
-  >
-    HOME
-  </div>
+  <AnimationLoading />
 </template>
