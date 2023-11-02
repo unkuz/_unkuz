@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import Ani from "~/svgs/ani.svg";
 import { gsap } from "gsap";
-import type { TimelineLite } from "gsap";
+import Ani from "~/svgs/ani.svg";
 
 const ani = ref(null);
 const sc1 = ref(null);
 const sc2 = ref(null);
-const currentScreen = ref(0);
 
 onMounted(() => {
   const tl = gsap.timeline({});
@@ -23,7 +21,7 @@ onMounted(() => {
       })
       .to(ani.value, {
         translateX: "0%",
-        duration: 0.5,
+        duration: 0.75,
         ease: "linear",
       })
       .set(sc1.value, {
@@ -34,7 +32,7 @@ onMounted(() => {
       })
       .to(ani.value, {
         translateX: "-100%",
-        duration: 0.5,
+        duration: 0.75,
         ease: "linear",
       });
 
@@ -58,7 +56,7 @@ onMounted(() => {
 
     <div
       ref="sc2"
-      class="!w-screen !h-screen font-cuz uppercase justify-center items-center hidden font-bold"
+      class="!w-screen !h-screen font-cuz uppercase justify-center items-center hidden font-bold tracking-tight"
     >
       _This site is under development
     </div>
