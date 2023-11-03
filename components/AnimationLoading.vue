@@ -21,7 +21,7 @@ onMounted(() => {
       })
       .to(ani.value, {
         translateX: "0%",
-        duration: 0.75,
+        duration: 1,
         ease: "linear",
       })
       .set(sc1.value, {
@@ -32,7 +32,7 @@ onMounted(() => {
       })
       .to(ani.value, {
         translateX: "-100%",
-        duration: 0.75,
+        duration: 1,
         ease: "linear",
       });
 
