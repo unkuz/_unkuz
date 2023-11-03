@@ -38,7 +38,7 @@ onMounted(() => {
 
   setTimeout(() => {
     animation();
-  }, 5000);
+  }, 3000);
 });
 </script>
 
@@ -51,7 +51,7 @@ onMounted(() => {
       ref="sc1"
       class="!w-screen !h-screen flex justify-center items-center font-au text-[3rem] tracking-widest"
     >
-      CRUNKUZ
+      UNKUZ
     </div>
 
     <div

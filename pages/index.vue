@@ -2,7 +2,7 @@
 import AnimationLoading from "../components/AnimationLoading.vue";
 
 useHead({
-  title: "Crunkuz",
+  title: "Unkuz",
 });
 </script>
 
