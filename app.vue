@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-  title: "Unkuz 🥕",
+  title: "Unkuz",
   meta: [
     { name: "description", content: "Unkuz - Web developer based in Vietnam" },
   ],
