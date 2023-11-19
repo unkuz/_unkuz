@@ -1,7 +1,8 @@
 {
-  "name": "nuxt-app",
+  "name": "unkuz_site",
   "private": true,
   "type": "module",
+  "version": "1.0.1",
   "scripts": {
     "build": "nuxt build",
     "start": "nuxt start",

@@ -6,5 +6,7 @@ export default defineNuxtConfig({
     cssPath: "~/scss/tw.scss",
   },
   css: ["~/scss/main.scss"],
-  app: {},
+  app: {
+    head: {},
+  },
 });
