@@ -7,7 +7,7 @@ useHead({
 });
 </script>
 <template>
-  <div>
+  <div class="font-cuz">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
