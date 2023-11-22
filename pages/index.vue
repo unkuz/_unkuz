@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import AnimationLoading from "../components/AnimationLoading.vue";
+import AnimationLoading from "../components/Loading.vue";
 </script>
 
 <template>
-  <AnimationLoading />
+  <div></div>
 </template>
