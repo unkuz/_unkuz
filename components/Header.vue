@@ -6,7 +6,7 @@ const route = useRoute();
 
 <template>
   <header
-    class="w-full flex justify-between items-center fixed sm:top-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-50 bg-[#fdfdfdb2] backdrop-blur-[10px]"
+    class="w-full flex justify-between items-center fixed sm:top-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfdb2] backdrop-blur-[10px]"
   >
     <div
       title="Unkuz"
