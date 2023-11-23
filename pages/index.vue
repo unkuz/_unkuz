@@ -5,5 +5,5 @@ useHead({
 </script>
 
 <template>
-  <div>HOME</div>
+  <div></div>
 </template>
