@@ -16,7 +16,7 @@ console.log("Rout", route);
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
       <NuxtLink to="/work">
-        <div class="">_WORK</div>
+        <div>_WORK</div>
       </NuxtLink>
       <NuxtLink to="/about">
         <div>_ABOUT</div>
