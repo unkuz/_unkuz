@@ -1664,7 +1664,7 @@
     vite-plugin-checker "^0.6.2"
     vue-bundle-renderer "^2.0.0"
 
-"@nuxtjs/tailwindcss@^6.9.4":
+"@nuxtjs/tailwindcss@^6.10.1":
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.10.1.tgz#3455802ac85e2d34074159097fa52c8f179009a6"
   integrity sha512-LqOWiKUpCYErQoVTA7HN6QkjOBVGC24AmfgO/csQHRsRp8Bvw7rW+85fZ1cWY4KqlY0Rvx6pwZuOTcyiH31Orw==
@@ -5553,7 +5553,7 @@ nuxt-lodash@^2.5.3:
     "@types/lodash-es" "^4.17.10"
     lodash-es "^4.17.21"
 
-nuxt-svgo@^3.5.6:
+nuxt-svgo@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/nuxt-svgo/-/nuxt-svgo-3.6.0.tgz#784f09002e19c123ae19f6fdce6b5429e5339778"
   integrity sha512-mRl4340S6sGMhIfcCJa96PxpoZdSf2jj5j5FscbxgNtiWU5eQhCDO18aiPmks9CDZrFGpbv67Bd+9ZYI7jva6A==
@@ -7794,7 +7794,7 @@ vue-router@^4.2.5:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
-vue@^3.3.7, vue@^3.3.8:
+vue@^3.3.8:
   version "3.3.8"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.8.tgz#532ff071af24f6a69e5ecc53a66858a9ee874ffc"
   integrity sha512-5VSX/3DabBikOXMsxzlW8JyfeLKlG9mzqnWgLQLty88vdZL7ZJgrdgBOmrArwxiLtmS+lNNpPcBYqrhE6TQW5w==
