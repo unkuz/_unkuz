@@ -2,7 +2,6 @@
 import UnkuzLogo from "@/assets/svg/unkuz_logo.svg";
 
 const route = useRoute();
-console.log("Rout", route);
 </script>
 
 <template>
