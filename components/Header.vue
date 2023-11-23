@@ -5,8 +5,13 @@ const route = useRoute();
 </script>
 
 <template>
-  <header class="w-full flex justify-between items-center sticky">
-    <div title="Unkuz" class="flex items-center gap-[10px] font-au">
+  <header
+    class="w-full flex justify-between items-center fixed sm:top-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-50 bg-[#fdfdfdb2] backdrop-blur-[10px]"
+  >
+    <div
+      title="Unkuz"
+      class="flex items-center gap-[10px] font-au py-[20px] sm:py-0"
+    >
       <NuxtLink to="/">
         <!-- <UnkuzLogo
           :class="[

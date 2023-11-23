@@ -16,12 +16,15 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
-.page-enter-from,
+.page-enter-from {
+  opacity: 0;
+  transform: translateX(100%);
+  filter: blur(1rem);
+}
 .page-leave-to {
   opacity: 0;
-  transform: rotate3d(1, 1, 1, 15deg);
   filter: blur(1rem);
 }
 </style>
