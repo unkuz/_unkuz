@@ -9,14 +9,24 @@ console.log("Rout", route);
   <header class="w-full flex justify-between items-center sticky">
     <div title="Unkuz" class="flex items-center gap-[10px] font-au">
       <NuxtLink to="/">
-        <UnkuzLogo
+        <!-- <UnkuzLogo
           :class="[
             '!fill-transparent [&>path]:!fill-transparent !w-[35px] !h-[35px] hover:cursor-pointer hover:rotate-[180deg] duration-300',
             {
               '[&>path]:stroke-[#34d0ff]': route.path === '/',
             },
           ]"
-        />
+        /> -->
+        <div
+          :class="[
+            'text-[1.5rem] tracking-widest',
+            {
+              'text-[#34d0ff]': route.path === '/',
+            },
+          ]"
+        >
+          UNKUZ
+        </div>
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
