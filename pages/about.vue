@@ -1,8 +1,9 @@
 <template>
-  <div class="w-full flex justify-center flex-col items-center pt-[100px]">
+  <div
+    class="w-full flex justify-center flex-col items-center pt-[100px] gap-[20px]"
+  >
     <h1 class="text-[1rem]">About</h1>
-    <!-- <NuxtImg src="/unkuz.jpeg" class="w-[200px]" /> -->
-
+    <NuxtImg src="/unkuz.jpeg" class="w-[350px] object-cover" />
     <div class="indent-8">
       A passionate FrontEnd developer with 2+ years of experience working in
       building website. Proficient in HTML, CSS, JavaScript, TypeScript: plus

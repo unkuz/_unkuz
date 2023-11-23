@@ -6,7 +6,7 @@ console.log("Rout", route);
 </script>
 
 <template>
-  <header class="w-full flex justify-between items-center">
+  <header class="w-full flex justify-between items-center sticky">
     <div title="Unkuz" class="flex items-center gap-[10px] font-au">
       <NuxtLink to="/">
         <UnkuzLogo
