@@ -1,7 +1,20 @@
 <script setup lang="ts">
-import UnkuzLogo from "@/assets/svg/unkuz_logo.svg";
-
 const route = useRoute();
+
+const nav = [
+  {
+    name: "work",
+    path: "/work",
+  },
+  {
+    name: "about",
+    path: "/about",
+  },
+  {
+    name: "contact",
+    path: "/contact",
+  },
+];
 </script>
 
 <template>
@@ -13,14 +26,6 @@ const route = useRoute();
       class="flex items-center gap-[10px] font-au py-[20px] sm:py-0"
     >
       <NuxtLink to="/">
-        <!-- <UnkuzLogo
-          :class="[
-            '!fill-transparent [&>path]:!fill-transparent !w-[35px] !h-[35px] hover:cursor-pointer hover:rotate-[180deg] duration-300',
-            {
-              '[&>path]:stroke-[#34d0ff]': route.path === '/',
-            },
-          ]"
-        /> -->
         <div
           :class="[
             'text-[1.5rem] tracking-widest',
@@ -34,37 +39,16 @@ const route = useRoute();
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
-      <NuxtLink to="/work">
+      <NuxtLink v-for="(i, idx) in nav" :to="i.path" :key="idx">
         <div
           :class="[
+            ' uppercase',
             {
-              'text-[#34d0ff]': route.path === '/work',
+              'text-[#34d0ff]': route.path === i.path,
             },
           ]"
         >
-          WORK
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/about">
-        <div
-          :class="[
-            {
-              'text-[#34d0ff]': route.path === '/about',
-            },
-          ]"
-        >
-          ABOUT
-        </div>
-      </NuxtLink>
-      <NuxtLink to="/contact">
-        <div
-          :class="[
-            {
-              'text-[#34d0ff]': route.path === '/contact',
-            },
-          ]"
-        >
-          CONTACT
+          {{ i.name }}
         </div>
       </NuxtLink>
     </div>

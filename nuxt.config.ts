@@ -16,4 +16,7 @@ export default defineNuxtConfig({
     head: {},
     pageTransition: { name: "page", mode: "default" },
   },
+  image: {
+    format: ["webp"],
+  },
 });
