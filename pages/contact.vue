@@ -7,21 +7,19 @@
       >
       <a class="underline" href="tel:+84888388859">+84 888388859</a>
     </div>
-    <div
-      class="flex gap-[20px] mt-[30px] [&>svg]:!w-[15px] [&>svg]:!h-[15px] [&>svg]:cursor-pointer"
-    >
+    <div class="flex gap-[20px] mt-[30px] [&>svg]:cursor-pointer">
       <div title="I'm not using facebook">
-        <Facebook_invert class="cursor-not-allowed" />
+        <Facebook_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
 
       <div title="I'm not using Twitter">
-        <Twitter_invert class="cursor-not-allowed" />
+        <Twitter_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
       <div title="I'm not using Instagram">
-        <Instagram_invert class="cursor-not-allowed" />
+        <Instagram_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
       <NuxtLink to="https://github.com/unkuz" title="Github" target="_blank">
-        <Github_invert class="[&>path]:!fill-transparent" />
+        <Github_invert class="[&>path]:!fill-transparent !w-[17px] !h-[17px]" />
       </NuxtLink>
     </div>
   </div>

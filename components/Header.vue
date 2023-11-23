@@ -11,7 +11,7 @@ console.log("Rout", route);
       <NuxtLink to="/">
         <UnkuzLogo
           :class="[
-            '!fill-transparent [&>path]:!fill-transparent !w-[30px] !h-[30px] hover:cursor-pointer hover:rotate-[180deg] duration-300',
+            '!fill-transparent [&>path]:!fill-transparent !w-[35px] !h-[35px] hover:cursor-pointer hover:rotate-[180deg] duration-300',
             {
               '[&>path]:stroke-[#34d0ff]': route.path === '/',
             },

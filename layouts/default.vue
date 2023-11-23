@@ -1,8 +1,10 @@
 <template>
-  <div class="w-screen h-screen relative text-[.9rem] py-[30px]">
-    <div class="md:w-[700px] w-full mx-auto px-[20px] md:px-0">
+  <div class="w-screen h-screen relative text-[.9rem] py-[30px] sm:px-[100px]">
+    <div class="w-full mx-auto px-[20px] md:px-0">
       <Header />
-      <slot />
+      <div class="mx-auto sm:w-[700px]">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
