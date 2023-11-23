@@ -13,8 +13,11 @@ export default defineNuxtConfig({
   },
   css: ["~/scss/main.scss"],
   app: {
-    head: {},
+    head: {
+      meta: [{ name: "theme-color", content: "#000" }],
+    },
     pageTransition: { name: "page", mode: "default" },
+    layoutTransition: { name: "layout", mode: "default" },
   },
   image: {
     format: ["webp"],
