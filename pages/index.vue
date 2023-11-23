@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import AnimationLoading from "../components/Loading.vue";
+useHead({
+  title: "Unkuz",
+});
 </script>
 
 <template>
-  <div></div>
+  <div>HOME</div>
 </template>

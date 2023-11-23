@@ -14,6 +14,6 @@ export default defineNuxtConfig({
   css: ["~/scss/main.scss"],
   app: {
     head: {},
-    pageTransition: { name: "page", mode: "out-in" },
+    pageTransition: { name: "page", mode: "default" },
   },
 });

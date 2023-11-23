@@ -23,22 +23,4 @@
 useHead({
   title: "Unkuz | About Page",
 });
-
-// definePageMeta({
-//   pageTransition: {
-//     name: "custom-flip",
-//     mode: "out-in",
-//     onBeforeEnter: (el) => {
-//       console.log("onBeforeEnter...", [el]);
-//     },
-//     onEnter: (el, done) => {
-//       console.log("onEnter...", [el]);
-//     },
-//     onAfterEnter: (el) => {
-//       console.log("onAfterEnter...", [el]);
-//     },
-//   },
-// });
 </script>
-
-<style scoped></style>
