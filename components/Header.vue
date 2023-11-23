@@ -37,7 +37,7 @@ const route = useRoute();
             },
           ]"
         >
-          _WORK
+          WORK
         </div>
       </NuxtLink>
       <NuxtLink to="/about">
@@ -48,7 +48,7 @@ const route = useRoute();
             },
           ]"
         >
-          _ABOUT
+          ABOUT
         </div>
       </NuxtLink>
       <NuxtLink to="/contact">
@@ -59,7 +59,7 @@ const route = useRoute();
             },
           ]"
         >
-          _CONTACT
+          CONTACT
         </div>
       </NuxtLink>
     </div>

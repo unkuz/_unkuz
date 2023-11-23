@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center pt-[100px] gap-[20px]"
+    class="w-full flex justify-center flex-col items-center py-[100px] gap-[20px]"
   >
     <h1 class="text-[1rem]">About</h1>
     <NuxtImg src="/unkuz.jpeg" class="w-[350px] object-cover" />
