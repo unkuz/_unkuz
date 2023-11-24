@@ -19,7 +19,7 @@ const nav = [
 
 <template>
   <header
-    class="w-full  flex justify-between items-center fixed  sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd3b] backdrop-blur-[10px] "
+    class="w-full flex justify-between items-center fixed sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd3b] backdrop-blur-[10px]"
   >
     <div
       title="Unkuz"
@@ -28,7 +28,7 @@ const nav = [
       <NuxtLink to="/">
         <div
           :class="[
-            'text-[1.5rem] tracking-widest',
+            'text-[1.7rem] tracking-widest',
             {
               'text-[#34d0ff]': route.path === '/',
             },
