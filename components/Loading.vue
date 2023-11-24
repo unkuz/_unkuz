@@ -38,7 +38,7 @@ onMounted(() => {
 
   setTimeout(() => {
     animation();
-  }, 3000);
+  }, 1 * 1000);
 });
 </script>
 
