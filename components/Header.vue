@@ -3,15 +3,15 @@ const route = useRoute();
 
 const nav = [
   {
-    name: "work",
+    name: "_work",
     path: "/work",
   },
   {
-    name: "about",
+    name: "_about",
     path: "/about",
   },
   {
-    name: "contact",
+    name: "_contact",
     path: "/contact",
   },
 ];
@@ -19,7 +19,7 @@ const nav = [
 
 <template>
   <header
-    class="w-full flex justify-between items-center fixed sm:top-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd3b] backdrop-blur-[10px]"
+    class="w-full  flex justify-between items-center fixed  sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd3b] backdrop-blur-[10px] "
   >
     <div
       title="Unkuz"

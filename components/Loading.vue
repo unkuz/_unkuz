@@ -49,7 +49,7 @@ onMounted(() => {
     </div>
     <div
       ref="sc1"
-      class="!w-screen !h-screen flex justify-center items-center font-au text-[3rem] tracking-widest"
+      class="!w-screen !h-screen flex justify-center items-center font-au text-[2rem] tracking-widest"
     >
       UNKUZ
     </div>

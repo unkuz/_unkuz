@@ -7,7 +7,7 @@ useHead({
 });
 </script>
 <template>
-  <div class="font-cuz bg-[#ffffff85]">
+  <div class="font-cuz selection:bg-[#000] selection:text-[#fff]">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -16,17 +16,17 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .page-enter-from {
   opacity: 0;
-  transform: translateX(100%);
-  filter: blur(1rem);
+  transform: translateX(100%) translateY(0);
+  filter: blur(5px);
 }
 .page-leave-to {
   opacity: 0;
-  transform: translateX(-100%);
-  filter: blur(1rem);
+  transform: translateX(-100%) translateY(0);
+  filter: blur(5px);
 }
 </style>

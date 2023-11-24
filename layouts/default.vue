@@ -5,13 +5,13 @@
     </div>
     <div
       ref="sc1"
-      class="!w-screen !h-screen flex justify-center items-center font-au text-[3rem] tracking-widest"
+      class="!w-screen !h-screen flex justify-center items-center font-au text-[2.5rem] tracking-widest"
     >
       UNKUZ
     </div>
     <div ref="sc2" class="w-full mx-auto px-[20px] md:px-0 hidden">
       <Header />
-      <div class="mx-auto sm:w-[700px]">
+      <div class="mx-auto sm:w-[700px] mt-[86px]">
         <slot />
       </div>
     </div>
