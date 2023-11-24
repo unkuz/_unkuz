@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center pt-[100px] gap-[20px]"
+    class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px]"
   >
     <div>Side Project</div>
     <div class="grid grid-cols-1 w-full gap-[20px]">
