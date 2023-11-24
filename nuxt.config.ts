@@ -14,7 +14,14 @@ export default defineNuxtConfig({
   css: ["~/scss/main.scss"],
   app: {
     head: {
-      meta: [{ name: "theme-color", content: "#000" }],
+      meta: [
+        { name: "theme-color", content: "#000" },
+        {
+          name: "viewport",
+          content:
+            "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+        },
+      ],
     },
     pageTransition: { name: "page", mode: "default" },
     layoutTransition: { name: "layout", mode: "default" },
