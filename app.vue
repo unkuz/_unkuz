@@ -21,12 +21,12 @@ useHead({
 
 .page-enter-from {
   opacity: 0;
-  transform: translateX(100%) translateY(0);
+  transform: translateX(150%) translateY(0);
   filter: blur(5px);
 }
 .page-leave-to {
   opacity: 0;
-  transform: translateX(-100%) translateY(0);
+  transform: translateX(-150%) translateY(0);
   filter: blur(5px);
 }
 </style>
