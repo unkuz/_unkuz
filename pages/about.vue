@@ -5,7 +5,7 @@
       <NuxtImg src="/unkuz.jpeg" class="object-cover overflow-hidden" />
     </div>
 
-    <div>
+    <div class="mx-auto sm:w-[550px]">
       <p class="indent-8 text-justify">
         Unkuz is the code name of Nguyen Ba Cuong, a creative web developer with
         2.5+ years of experience working in building website. Proficient in
