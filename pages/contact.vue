@@ -10,14 +10,14 @@
       <a class="underline" href="tel:+84888388859">+84 888388859</a>
     </div>
     <div class="flex gap-[20px] mt-[30px] [&>svg]:cursor-pointer">
-      <div title="I'm not using facebook">
+      <div title="I'm not available">
         <Facebook_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
 
-      <div title="I'm not using Twitter">
+      <div title="I'm not available">
         <Twitter_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
-      <div title="I'm not using Instagram">
+      <div title="I'm not available">
         <Instagram_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
       <NuxtLink to="https://github.com/unkuz" title="Github" target="_blank">
