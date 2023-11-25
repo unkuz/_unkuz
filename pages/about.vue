@@ -96,6 +96,7 @@
       </div>
       <!-- <div>On the other hand, he also a music producer</div> -->
       </p>
+      <p class="indent-8 text-justify">Besides being a software engineer, I am also quite interested in becoming a music producer.  In recent months, I've been inspired by the future bounce music genre.  Producers who inspire me at the moment are: rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024 I can release a song sound something similar ⭐</p>
     </div>
   </div>
 </template>
