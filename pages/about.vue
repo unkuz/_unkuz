@@ -24,11 +24,11 @@
         is the list of technologies that I have experience with:
         
       <div class="[&_svg]:cursor-pointer indent-0 flex flex-col gap-[8px] mt-[10px]">
-        <span class="">Application and Data</span>
+        <span >Application and Data</span>
         <div class="flex  gap-x-[20px] gap-y-[5px] flex-wrap [&>svg]:text-[30px]">
           <Tailwind filled />
-          <ReactIcon filled class="" />
-          <NuxtIcon filled class="" />
+          <ReactIcon filled  />
+          <NuxtIcon filled  />
           <NextIcon filled class="!text-[45px]" />
           <VueIcon filled />
           <Lodash filled />
@@ -42,13 +42,13 @@
           <Mysql filled />
           <Postgresql filled />
         </div>
-        <span class="">Utilities</span>
+        <span >Utilities</span>
         <div class="flex gap-x-[20px] gap-y-[8px] flex-wrap [&>svg]:text-[30px]">
           <Framerjs filled />
           <Jest filled />
           <Figma filled />
         </div>
-        <span class="">DevOps</span>
+        <span >DevOps</span>
         <div class="flex gap-x-[20px] gap-y-[8px] flex-wrap [&>svg]:text-[30px]">
           <Docker filled />
           <Datadog filled  class="!text-[45px]" s/>
