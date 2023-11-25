@@ -12,7 +12,7 @@
         HTML, CSS, JavaScript, TypeScript, Python,...: plus modern libraries,
         frameworks and mastering the latest front-end technologies. Well-versed
         in requirements aith an in-depth knowledge. I'm currently working in
-        Hanoi as a web developer, while also taking on freelance projects that
+        Hanoi as a Software Engineering, while also taking on freelance projects that
         pique my interest. Here
         is the list of technologies that I have experience with:
 
