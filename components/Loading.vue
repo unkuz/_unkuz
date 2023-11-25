@@ -36,9 +36,7 @@ onMounted(() => {
         ease: "linear",
       });
 
-  setTimeout(() => {
-    animation();
-  }, 1 * 1000);
+  animation();
 });
 </script>
 
