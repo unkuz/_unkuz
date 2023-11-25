@@ -8,7 +8,7 @@
     >
       <NuxtImg
         src="/unkuz.jpeg"
-        class="object-cover overflow-hidden hover:scale-110 duration-300"
+        class="object-cover overflow-hidden"
       />
     </div>
 
