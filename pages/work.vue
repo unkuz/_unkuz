@@ -5,11 +5,6 @@
     <div>Side Project</div>
     <NuxtImg src="/doge.png" class="object-cover w-[170px]" />
     <spna>There is no data here.</spna>
-    <!-- <div class="grid grid-cols-1 w-full gap-[20px]">
-      <div
-        class="w-full h-[200px] [clip-path:polygon(0_0,calc(100%-10px)_0,100%_10px,100%_100%,10px_100%,0_calc(100%-10px))] pj opacity-20"
-      ></div>
-    </div> -->
   </div>
 </template>
 
@@ -17,7 +12,6 @@
 useHead({
   title: "Unkuz | Work Page",
 });
-import doge from "@/assets/image/doge.png";
 </script>
 
 <style scoped>

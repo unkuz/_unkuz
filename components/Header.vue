@@ -28,7 +28,7 @@ const nav = [
       <NuxtLink to="/">
         <div
           :class="[
-            'text-[1.7rem] tracking-widest',
+            'text-[1.7rem] tracking-widest select-none',
             {
               'text-[#34d0ff]': route.path === '/',
             },

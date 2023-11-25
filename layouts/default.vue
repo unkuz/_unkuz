@@ -5,7 +5,7 @@
     </div>
     <div
       ref="sc1"
-      class="!w-screen !h-screen flex justify-center items-center font-au text-[2.5rem] tracking-widest"
+      class="!w-screen !h-screen flex justify-center items-center font-au text-[2.5rem] tracking-widest select-none"
     >
       UNKUZ
     </div>
