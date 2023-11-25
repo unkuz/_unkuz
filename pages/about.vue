@@ -4,7 +4,7 @@
   >
     <h1 class="text-[1rem]">About</h1>
     <div
-      class="w-[350px] overflow-hidden [clip-path:polygon(20px_0,100%_0,100%_calc(100%-20px),calc(100%-20px)_100%,0_100%,0_20px)]"
+      class="w-[350px] overflow-hidden"
     >
       <NuxtImg
         src="/unkuz.jpeg"
