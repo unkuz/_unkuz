@@ -5,36 +5,41 @@ defineProps<{
   text: string;
 }>();
 
-const elRef = ref<HTMLDivElement | null>(null);
-const speed = 0.015;
+const el = ref<HTMLDivElement | null>(null);
 
 const onHover = () => {
-  elRef.value?.childNodes.forEach((i) => {
-    console.log("i?.childNodes",i?.childNodes);
-    i?.childNodes && gsap.to(i?.childNodes, {
-      transform: "translateY(-100%)",
-      stagger: {
-        each: 0.015,
-      },
-    });
+  console.log("el.value?.childNodes", el.value?.childNodes);
+  // el.value?.childNodes.forEach((i) => console.log(i.childNodes));
+
+  el.value?.childNodes.forEach((i) => {
+    if (i.nodeType !== 3) {
+      gsap.to(i?.childNodes, {
+        transform: "translateY(-100%)",
+        stagger: {
+          each: 0.015,
+        },
+      });
+    }
   });
 };
 const onLeave = () => {
-  elRef.value?.childNodes.forEach((i) => {
-    i?.childNodes && gsap.to(i?.childNodes, {
-      transform: "translateY(0%)",
-      stagger: {
-        each: 0.015,
-        ease: "cubic-bezier(0.76,0,0.24,1)",
-      },
-    });
+  el.value?.childNodes.forEach((i) => {
+    if (i.nodeType !== 3) {
+      gsap.to(i?.childNodes, {
+        transform: "translateY(0%)",
+        stagger: {
+          each: 0.015,
+          ease: "cubic-bezier(0.76,0,0.24,1)",
+        },
+      });
+    }
   });
 };
 </script>
 
 <template>
   <div
-    ref="elRef"
+    ref="el"
     @mouseover="onHover"
     @mouseleave="onLeave"
     class="h-[50px] [&__span]:text-[50px] [&__span]:leading-[50px] overflow-hidden cursor-pointer"
@@ -42,7 +47,7 @@ const onLeave = () => {
     <div v-for="i in 2" :key="i" class="last:text-blue-400 flex">
       <span
         v-for="(j, idx) in text.replaceAll(' ', '\xa0').split('')"
-        className="inline-block"
+        class="inline-block"
         :key="idx"
       >
         {{ j }}

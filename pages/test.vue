@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import RollingText from '~/components/RollingText.vue';
-
-
+import RollingText from "~/components/RollingText.vue";
 </script>
 
 <template>
-    <div>
-        <RollingText text="UNKUZ" />
-    </div>
+  <div class="mt-[200px]">
+    <RollingText text="UNKUZ" />
+  </div>
 </template>
