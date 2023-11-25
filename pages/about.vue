@@ -6,10 +6,7 @@
     <div
       class="w-[350px] overflow-hidden [clip-path:polygon(20px_0,100%_0,100%_calc(100%-20px),calc(100%-20px)_100%,0_100%,0_20px)]"
     >
-      <NuxtImg
-        src="/unkuz.jpeg"
-        class="object-cover overflow-hidden hover:scale-110 duration-300"
-      />
+      <NuxtImg src="/unkuz.jpeg" class="object-cover" />
     </div>
 
     <div class="indent-8">
