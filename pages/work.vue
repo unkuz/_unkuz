@@ -3,7 +3,13 @@
     class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px] min-h-screen"
   >
     <div>Side Project</div>
-    <NuxtImg src="/doge.png" class="object-cover w-[170px]" />
+
+    <NuxtImg
+      v-if="dogEyesRight"
+      src="/doge_right.png"
+      class="object-cover w-[170px]"
+    />
+    <NuxtImg v-else src="/doge_left.png" class="object-cover w-[170px]" />
     <div>There is no data here.</div>
   </div>
 </template>
@@ -11,6 +17,13 @@
 <script setup lang="ts">
 useHead({
   title: "Unkuz | Work Page",
+});
+
+const { x } = useMouse();
+const dogEyesRight = ref(true);
+
+watch(x, (val) => {
+  dogEyesRight.value = val - document.body.clientWidth / 2 >= 0;
 });
 </script>
 
