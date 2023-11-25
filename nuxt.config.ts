@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
+    "@nuxtjs/device",
   ],
   tailwindcss: {
     cssPath: "~/scss/tw.scss",
