@@ -13,7 +13,7 @@
     </div>
 
     <div >
-      <p class="indent-8">
+      <p class="indent-8 text-justify">
         Unkuz is the code name of Nguyen Ba Cuong, a creative web developer with
         2.5+ years of experience working in building website. Proficient in
         HTML, CSS, JavaScript, TypeScript, Python,...: plus modern libraries,
