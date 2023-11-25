@@ -1,3 +1,5 @@
+import { VitePWA } from "vite-plugin-pwa";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -14,6 +16,9 @@ export default defineNuxtConfig({
     cssPath: "~/scss/tw.scss",
   },
   css: ["~/scss/main.scss"],
+  pwa: {
+    /* your pwa options */
+  },
   app: {
     head: {
       meta: [

@@ -13,6 +13,7 @@ useHead({
   <div class="font-cuz selection:bg-[#000] selection:text-[#fff]">
     <NuxtLayout>
       <SwipeContext>
+        <VitePwaManifest />
         <NuxtPage />
       </SwipeContext>
     </NuxtLayout>
