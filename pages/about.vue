@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center py-[30px] gap-[20px]"
+    class="w-full flex justify-center flex-col items-center py-[100px] gap-[20px] min-h-screen"
   >
     <h1 class="text-[1rem]">About</h1>
     <div
@@ -21,11 +21,11 @@
         in requirements aith an in-depth knowledge. I'm currently working in
         Hanoi as a web developer, while also taking on freelance projects that
         pique my interest. Here
-        is the list of technologies that I have experience with
+        is the list of technologies that I have experience with:
         
-      <div class="[&_svg]:cursor-pointer indent-0 flex flex-col gap-[10px]">
+      <div class="[&_svg]:cursor-pointer indent-0 flex flex-col gap-[8px] mt-[10px]">
         <span class="">Application and Data</span>
-        <div class="flex  gap-x-[20px] gap-y-[8px] flex-wrap [&>svg]:text-[30px]">
+        <div class="flex  gap-x-[20px] gap-y-[5px] flex-wrap [&>svg]:text-[30px]">
           <Tailwind filled />
           <ReactIcon filled class="" />
           <NuxtIcon filled class="" />
