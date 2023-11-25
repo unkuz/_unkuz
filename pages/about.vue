@@ -20,7 +20,7 @@
         frameworks and mastering the latest front-end technologies. Well-versed
         in requirements aith an in-depth knowledge. I'm currently working in
         Hanoi as a web developer, while also taking on freelance projects that
-        pique my interest. Here is the list of my technologies I exprencie. Here
+        pique my interest. Here
         is the list of technologies that I have experience with
         
       <div class="[&_svg]:cursor-pointer indent-0 flex flex-col gap-[10px]">
