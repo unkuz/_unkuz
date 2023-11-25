@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import SwipeContext from "@/components/SwipeContext.vue";
+
 useHead({
   title: "Unkuz",
   meta: [
@@ -6,13 +8,17 @@ useHead({
   ],
 });
 </script>
+
 <template>
   <div class="font-cuz selection:bg-[#000] selection:text-[#fff]">
     <NuxtLayout>
-      <NuxtPage />
+      <SwipeContext>
+        <NuxtPage />
+      </SwipeContext>
     </NuxtLayout>
   </div>
 </template>
+
 <style>
 .page-enter-active,
 .page-leave-active {

@@ -11,7 +11,7 @@
     </div>
     <div ref="sc2" class="w-full mx-auto px-[20px] md:px-0 hidden">
       <Header />
-      <div class="mx-auto sm:w-[700px] mt-[86px]">
+      <div class="mx-auto sm:w-[700px]">
         <slot />
       </div>
     </div>

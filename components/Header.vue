@@ -1,20 +1,6 @@
 <script setup lang="ts">
+import { navigation } from "@/config/app";
 const route = useRoute();
-
-const nav = [
-  {
-    name: "_work",
-    path: "/work",
-  },
-  {
-    name: "_about",
-    path: "/about",
-  },
-  {
-    name: "_contact",
-    path: "/contact",
-  },
-];
 </script>
 
 <template>
@@ -39,7 +25,7 @@ const nav = [
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
-      <NuxtLink v-for="(i, idx) in nav" :to="i.path" :key="idx">
+      <NuxtLink v-for="(i, idx) in navigation" :to="i.path" :key="idx">
         <div
           :class="[
             ' uppercase',

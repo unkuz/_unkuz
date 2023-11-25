@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "nuxt-lodash",
     "@nuxt/image",
     "@vite-pwa/nuxt",
+    "@vueuse/nuxt",
   ],
   tailwindcss: {
     cssPath: "~/scss/tw.scss",
@@ -28,5 +29,16 @@ export default defineNuxtConfig({
   },
   image: {
     format: ["webp"],
+  },
+  lodash: {
+    prefix: "_",
+    prefixSkip: ["string"],
+    upperAfterPrefix: false,
+    exclude: ["map"],
+    alias: [
+      ["camelCase", "stringToCamelCase"], // => stringToCamelCase
+      ["kebabCase", "stringToKebab"], // => stringToKebab
+      ["isDate", "isLodashDate"], // => _isLodashDate
+    ],
   },
 });

@@ -1,10 +1,10 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px]"
+    class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px] min-h-screen"
   >
     <div>Side Project</div>
     <NuxtImg src="/doge.png" class="object-cover w-[170px]" />
-    <spna>There is no data here.</spna>
+    <div>There is no data here.</div>
   </div>
 </template>
 
