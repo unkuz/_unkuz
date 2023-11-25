@@ -2,6 +2,11 @@
 useHead({
   title: "Unkuz",
 });
+
+const router = useRouter();
+onMounted(() => {
+  router.push("/work");
+});
 </script>
 
 <template>
