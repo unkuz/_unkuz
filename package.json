@@ -33,6 +33,7 @@
     "@nuxt/image": "^1.1.0",
     "@pinia/nuxt": "^0.5.1",
     "@vercel/analytics": "^1.1.1",
+    "custom-vue-scrollbar": "^0.0.8",
     "devfools": "^0.2.1",
     "gsap": "^3.12.2"
   }

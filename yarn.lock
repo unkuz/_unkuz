@@ -3259,6 +3259,14 @@ csstype@^3.1.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+custom-vue-scrollbar@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/custom-vue-scrollbar/-/custom-vue-scrollbar-0.0.8.tgz#5bc32e35cd6cbada916de732affb7a6397cbbc72"
+  integrity sha512-JcO0B+02Kf9wXSL9SaxXVvuToaY+lvJAtmrwNfSLS3x6xx5+mO24r5/dGkNK8av0VlSDzviypYUXTjEZbwgGHA==
+  dependencies:
+    lodash-es "^4.17.21"
+    vue "^3.2.21"
+
 debug@2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -7898,7 +7906,7 @@ vue-router@^4.2.5:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
-vue@^3.3.8, vue@^3.3.9:
+vue@^3.2.21, vue@^3.3.8, vue@^3.3.9:
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.9.tgz#219a2ec68e8d4d0b0180460af0f5b9299b3f3f1f"
   integrity sha512-sy5sLCTR8m6tvUk1/ijri3Yqzgpdsmxgj6n6yl7GXXCXqVbmW2RCXe9atE4cEI6Iv7L89v5f35fZRRr5dChP9w==
