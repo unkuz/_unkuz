@@ -19,12 +19,14 @@ useHead({
   title: "Unkuz | Work Page",
 });
 
-const { x } = useMouse();
 const dogEyesRight = ref(true);
+const { x } = useMouse();
 
-watch(x, (val) => {
-  dogEyesRight.value = val - document.body.clientWidth / 2 >= 0;
-});
+const setDogEyes = () =>
+  (dogEyesRight.value = x.value - document.body.clientWidth / 2 >= 0);
+
+onMounted(setDogEyes);
+watch(x, setDogEyes);
 </script>
 
 <style scoped>
