@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/device",
     "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
   ],
   tailwindcss: {
     cssPath: "~/scss/tw.scss",
@@ -47,5 +48,11 @@ export default defineNuxtConfig({
       ["kebabCase", "stringToKebab"], // => stringToKebab
       ["isDate", "isLodashDate"], // => _isLodashDate
     ],
+  },
+  piniaPersistedstate: {
+    cookieOptions: {
+      sameSite: "strict",
+    },
+    storage: "localStorage",
   },
 });

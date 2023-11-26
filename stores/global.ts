@@ -12,4 +12,5 @@ export const uGlobalS = defineStore("global", {
       this.darkMode = !this.darkMode;
     },
   },
+  persist: true,
 });

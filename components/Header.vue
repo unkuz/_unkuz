@@ -6,7 +6,7 @@ const globalS = uGlobalS();
 
 <template>
   <header
-    class="w-full flex justify-between items-center fixed sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd0e] backdrop-blur-[5px]"
+    class="w-full flex justify-between items-center fixed sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd0e] backdrop-blur-[5px] dark:bg-black"
   >
     <div
       title="Unkuz"
@@ -25,8 +25,8 @@ const globalS = uGlobalS();
         </div>
       </NuxtLink>
     </div>
-    <div @click="globalS.toggleDarkMode">Toggel Dark</div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
+      <NightMode @click="globalS.toggleDarkMode" />
       <NuxtLink v-for="(i, idx) in navigation" :to="i.path" :key="idx">
         <div
           :class="[

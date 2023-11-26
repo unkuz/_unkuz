@@ -12,7 +12,9 @@ useSyncDarkMode();
 </script>
 
 <template>
-  <div class="font-cuz selection:bg-[#000] selection:text-[#fff]">
+  <div
+    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#fff] dark:selection:text-[#000] w-screen overflow-x-hidden"
+  >
     <NuxtLayout>
       <SwipeContext>
         <VitePwaManifest />

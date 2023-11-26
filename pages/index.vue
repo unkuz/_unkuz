@@ -4,11 +4,10 @@ useHead({
 });
 
 const router = useRouter();
-onMounted(() => {
+
+onBeforeMount(() => {
   router.push("/work");
 });
 </script>
 
-<template>
-  <div></div>
-</template>
+<template></template>

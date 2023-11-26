@@ -55,9 +55,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-screen h-screen relative text-[.9rem] overflow-x-hidden">
+  <div
+    class="w-screen relative text-[.9rem] overflow-x-hidden dark:bg-black dark:text-white duration-500"
+  >
     <div ref="ani" class="fixed left-0 top-0 translate-x-[150%] z-[60]">
-      <Ani class="!w-auto !h-screen" />
+      <Ani filled class="!w-auto !h-screen dark:[&_path]:fill-white" />
     </div>
     <div
       ref="sc1"

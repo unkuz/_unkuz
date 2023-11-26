@@ -1,8 +1,8 @@
 <template>
   <div class="w-full flex justify-center flex-col items-center py-[100px] gap-[20px] min-h-screen">
     <h1 class="text-[1rem]">About</h1>
-    <div class="w-[350px] overflow-hidden">
-      <NuxtImg src="/unkuz.jpeg" class="object-cover overflow-hidden" />
+    <div class="overflow-hidden">
+      <NuxtImg src="/unkuz.jpeg" class="object-cover w-[350px]" />
     </div>
 
     <div class="mx-auto sm:w-[550px]">

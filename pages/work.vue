@@ -2,7 +2,7 @@
   <div
     class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px] min-h-screen"
   >
-    <div>Side Project</div>
+    <div class="">Side Project</div>
 
     <NuxtImg
       v-if="dogEyesRight"
