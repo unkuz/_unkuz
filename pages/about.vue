@@ -22,11 +22,11 @@
           <NuxtLink to="https://tailwindcss.com/" target="_blank">
             <Tailwind filled />
           </NuxtLink>
-          <NuxtLink  to="https://react.dev/"   target="_blank">
-            <ReactIcon filled  target="_blank"/>
+          <NuxtLink to="https://react.dev/" target="_blank">
+            <ReactIcon filled target="_blank" />
           </NuxtLink>
-          <NuxtLink  to="https://nuxt.com/"   target="_blank">
-            <NuxtIcon filled   />
+          <NuxtLink to="https://nuxt.com/" target="_blank">
+            <NuxtIcon filled />
           </NuxtLink>
           <NuxtLink to="https://nextjs.org/ " target="_blank">
             <NextIcon filled class="!text-[45px]" />
@@ -36,6 +36,12 @@
           </NuxtLink>
           <NuxtLink to="https://lodash.com/" target="_blank">
             <Lodash filled />
+          </NuxtLink>
+          <NuxtLink to="https://pixijs.com/" target="_blank">
+            <Pixi filled />
+          </NuxtLink>
+          <NuxtLink to="https://threejs.org/" target="_blank">
+            <ThreeJS filled />
           </NuxtLink>
           <NuxtLink to="https://expressjs.com/" target="_blank">
             <Express filled />
@@ -64,7 +70,6 @@
           <NuxtLink to="https://www.postgresql.org/" target="_blank">
             <Postgresql filled />
           </NuxtLink>
-
         </div>
         <span>Utilities</span>
         <div class="flex gap-x-[20px] gap-y-[8px] flex-wrap [&_svg]:text-[30px]">
@@ -94,9 +99,11 @@
           </NuxtLink>
         </div>
       </div>
-      <!-- <div>On the other hand, he also a music producer</div> -->
       </p>
-      <p class="indent-8 text-justify">Besides being a software engineer, I am also quite interested in becoming a music producer.  In recent months, I've been inspired by the future bounce music genre.  Producers who inspire me at the moment are: rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024 I can release a song sound something similar ⭐</p>
+      <p class="indent-8 text-justify">Besides being a software engineer, I am also quite interested in becoming a music
+        producer. In recent months, I've been inspired by the future bounce music genre. Producers who inspire me at the
+        moment are: rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024 I can release a song sound
+        something similar ⭐</p>
     </div>
   </div>
 </template>
@@ -111,14 +118,12 @@ import Django from "@/assets/svg/django.svg";
 import Nodejs from "@/assets/svg/nodejs.svg";
 import Socketio from "@/assets/svg/socketio.svg";
 import Python from "@/assets/svg/python.svg";
-
 import Mysql from "@/assets/svg/mysql.svg";
 import Postgresql from "@/assets/svg/postgresql.svg";
 import Mongodb from "@/assets/svg/mongodb.svg";
 import Express from "@/assets/svg/express.svg";
 import Nestjs from "@/assets/svg/nestjs.svg";
 import Lodash from "@/assets/svg/lodash.svg";
-
 import Framerjs from "@/assets/svg/framerjs.svg";
 import Jest from "@/assets/svg/jest.svg";
 import Datadog from "@/assets/svg/datadog.svg";
@@ -126,8 +131,11 @@ import Figma from "@/assets/svg/figma.svg";
 import Docker from "@/assets/svg/docker.svg";
 import Google_analytics from "@/assets/svg/google_analytics.svg";
 import TravisCI from "@/assets/svg/travisCI.svg";
+import Pixi from "@/assets/svg/pixi.svg";
+import ThreeJS from "@/assets/svg/threejs.svg";
 
 useHead({
   title: "Unkuz | About Page",
 });
+
 </script>
