@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { navigation } from '@/config/app';
+
 const route = useRoute();
 const globalS = uGlobalS();
 </script>

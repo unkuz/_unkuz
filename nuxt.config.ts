@@ -1,5 +1,3 @@
-import { VitePWA } from 'vite-plugin-pwa';
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -14,6 +12,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
   ],
+  components: {
+    dirs: ['~/components', '~/composables', '~/ctx', '~/utils'],
+  },
   tailwindcss: {
     cssPath: '~/scss/tw.scss',
   },
@@ -29,6 +30,10 @@ export default defineNuxtConfig({
           name: 'viewport',
           content:
             'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
+        },
+        {
+          name: 'description',
+          content: 'Unkuz - Web developer, Music Producer based in Vietnam',
         },
       ],
     },

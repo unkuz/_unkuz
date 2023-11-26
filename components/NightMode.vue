@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import Star from '@/assets/svg/star.svg';
-const { darkMode } = storeToRefs(uGlobalS());
 </script>
 
 <template>

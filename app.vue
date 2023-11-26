@@ -1,25 +1,18 @@
 <script lang="ts" setup>
-import SwipeContext from '@/components/SwipeContext.vue';
-
-useHead({
-  title: 'Unkuz',
-  meta: [
-    { name: 'description', content: 'Unkuz - Web developer based in Vietnam' },
-  ],
-});
+import SwipeCtx from '@/ctx/SwipeCtx.vue';
 
 useSyncDarkMode();
 </script>
 
 <template>
   <div
-    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#fff] dark:selection:text-[#000]"
+    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#43fd2a] dark:selection:text-[#000]"
   >
     <NuxtLayout>
-      <SwipeContext>
+      <SwipeCtx>
         <VitePwaManifest />
         <NuxtPage />
-      </SwipeContext>
+      </SwipeCtx>
     </NuxtLayout>
   </div>
 </template>
