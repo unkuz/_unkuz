@@ -1,22 +1,24 @@
 <script lang="ts" setup>
 import Header from '@/components/Header.vue';
 import { gsap } from 'gsap';
-import Ani from '~/svgs/ani.svg';
+import Ani from '@/assets/svg/ani.svg';
+
+const ani = ref<HTMLDivElement | null>(null);
+const pre = ref<HTMLDivElement | null>(null);
+const main = ref<HTMLDivElement | null>(null);
 
 const { isMobile } = useDevice();
 
-const ani = ref(null);
-const sc1 = ref(null);
-const sc2 = ref(null);
-
 onMounted(() => {
   if (isMobile) {
-    gsap.set(sc1.value, {
-      display: 'none',
-    });
-    gsap.set(sc2.value, {
-      display: 'block',
-    });
+    setTimeout(() => {
+      gsap.set(pre.value, {
+        display: 'none',
+      });
+      gsap.set(main.value, {
+        display: 'block',
+      });
+    }, 1000);
     return;
   }
   const tl = gsap.timeline({});
@@ -25,10 +27,10 @@ onMounted(() => {
       .set(ani.value, {
         translateX: '100%',
       })
-      .set(sc1.value, {
+      .set(pre.value, {
         display: 'flex',
       })
-      .set(sc2.value, {
+      .set(main.value, {
         display: 'none',
       })
       .to(ani.value, {
@@ -36,10 +38,10 @@ onMounted(() => {
         duration: 0.5,
         ease: 'linear',
       })
-      .set(sc1.value, {
+      .set(pre.value, {
         display: 'none',
       })
-      .set(sc2.value, {
+      .set(main.value, {
         display: 'block',
       })
       .to(ani.value, {
@@ -60,12 +62,12 @@ onMounted(() => {
       <Ani filled class="!h-screen !w-auto dark:[&_path]:fill-white" />
     </div>
     <div
-      ref="sc1"
+      ref="pre"
       class="flex !h-screen !w-screen select-none items-center justify-center font-au text-[2.5rem] tracking-widest"
     >
       UNKUZ
     </div>
-    <div ref="sc2" class="mx-auto hidden w-full px-[20px] md:px-0">
+    <div ref="main" class="mx-auto hidden w-full px-[20px] md:px-0">
       <Header />
       <div class="mx-auto sm:w-[700px]">
         <slot />
