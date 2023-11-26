@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
     "@nuxtjs/device",
+    "@pinia/nuxt",
   ],
   tailwindcss: {
     cssPath: "~/scss/tw.scss",
