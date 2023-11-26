@@ -7,52 +7,51 @@ const ani = ref<HTMLDivElement | null>(null);
 const pre = ref<HTMLDivElement | null>(null);
 const main = ref<HTMLDivElement | null>(null);
 
+const { appReady } = storeToRefs(uGlobalS());
+
 const { isMobile } = useDevice();
 
-onMounted(() => {
-  if (isMobile) {
-    setTimeout(() => {
+watch(appReady, (val) => {
+  if (val) {
+    if (isMobile) {
       gsap.set(pre.value, {
         display: 'none',
       });
       gsap.set(main.value, {
         display: 'block',
       });
-    }, 1000);
-    return;
-  }
-  const tl = gsap.timeline({});
-  const animation = () =>
-    tl
-      .set(ani.value, {
-        translateX: '100%',
-      })
-      .set(pre.value, {
-        display: 'flex',
-      })
-      .set(main.value, {
-        display: 'none',
-      })
-      .to(ani.value, {
-        translateX: '0%',
-        duration: 0.5,
-        ease: 'linear',
-      })
-      .set(pre.value, {
-        display: 'none',
-      })
-      .set(main.value, {
-        display: 'block',
-      })
-      .to(ani.value, {
-        translateX: '-100%',
-        duration: 0.5,
-        ease: 'linear',
-      });
+      return;
+    }
 
-  setTimeout(() => {
-    animation();
-  }, 1000);
+    const tl = gsap.timeline({});
+    (() =>
+      tl
+        .set(ani.value, {
+          translateX: '100%',
+        })
+        .set(pre.value, {
+          display: 'flex',
+        })
+        .set(main.value, {
+          display: 'none',
+        })
+        .to(ani.value, {
+          translateX: '0%',
+          duration: 0.5,
+          ease: 'linear',
+        })
+        .set(pre.value, {
+          display: 'none',
+        })
+        .set(main.value, {
+          display: 'block',
+        })
+        .to(ani.value, {
+          translateX: '-100%',
+          duration: 0.5,
+          ease: 'linear',
+        }))();
+  }
 });
 </script>
 

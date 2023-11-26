@@ -1,6 +1,7 @@
 export const uGlobalS = defineStore('global', {
   state: () => ({
     darkMode: false,
+    appReady: false,
   }),
   getters: {},
   actions: {
@@ -11,6 +12,15 @@ export const uGlobalS = defineStore('global', {
       }
       this.darkMode = !this.darkMode;
     },
+    setAppReady(val?: boolean) {
+      if (_isBoolean(val)) {
+        this.appReady = val;
+        return;
+      }
+      this.appReady = true;
+    },
   },
-  persist: true,
+  persist: {
+    paths: ['darkMode'],
+  },
 });
