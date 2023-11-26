@@ -7,6 +7,8 @@ useHead({
     { name: "description", content: "Unkuz - Web developer based in Vietnam" },
   ],
 });
+
+useSyncDarkMode();
 </script>
 
 <template>

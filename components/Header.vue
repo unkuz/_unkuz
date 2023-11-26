@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { navigation } from "@/config/app";
 const route = useRoute();
+const globalS = uGlobalS();
 </script>
 
 <template>
@@ -24,6 +25,7 @@ const route = useRoute();
         </div>
       </NuxtLink>
     </div>
+    <div @click="globalS.toggleDarkMode">Toggel Dark</div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
       <NuxtLink v-for="(i, idx) in navigation" :to="i.path" :key="idx">
         <div

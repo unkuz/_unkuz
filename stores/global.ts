@@ -3,5 +3,13 @@ export const uGlobalS = defineStore("global", {
     darkMode: false,
   }),
   getters: {},
-  actions: {},
+  actions: {
+    toggleDarkMode(val?: boolean) {
+      if (_isBoolean(val)) {
+        this.darkMode = val;
+        return;
+      }
+      this.darkMode = !this.darkMode;
+    },
+  },
 });
