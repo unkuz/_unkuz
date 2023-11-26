@@ -1,7 +1,7 @@
-import { devfools } from "devfools";
+import { devfools } from 'devfools';
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.hook("app:created", () => {
-    devfools("all");
+  nuxtApp.hook('app:created', () => {
+    devfools('all');
   });
 });

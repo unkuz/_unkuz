@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useHead({
-  title: "Unkuz",
+  title: 'Unkuz',
 });
 
 const router = useRouter();
 
 onBeforeMount(() => {
-  router.push("/work");
+  router.push('/work');
 });
 </script>
 

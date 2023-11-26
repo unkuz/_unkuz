@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { gsap } from "gsap";
-import Ani from "~/svgs/ani.svg";
+import { gsap } from 'gsap';
+import Ani from '~/svgs/ani.svg';
 
 const ani = ref(null);
 const sc1 = ref(null);
@@ -11,29 +11,29 @@ onMounted(() => {
   const animation = () =>
     tl
       .set(ani.value, {
-        translateX: "100%",
+        translateX: '100%',
       })
       .set(sc1.value, {
-        display: "flex",
+        display: 'flex',
       })
       .set(sc2.value, {
-        display: "none",
+        display: 'none',
       })
       .to(ani.value, {
-        translateX: "0%",
+        translateX: '0%',
         duration: 1,
-        ease: "linear",
+        ease: 'linear',
       })
       .set(sc1.value, {
-        display: "none",
+        display: 'none',
       })
       .set(sc2.value, {
-        display: "flex",
+        display: 'flex',
       })
       .to(ani.value, {
-        translateX: "-100%",
+        translateX: '-100%',
         duration: 1,
-        ease: "linear",
+        ease: 'linear',
       });
 
   animation();
@@ -41,20 +41,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex w-screen h-screen overflow-hidden">
+  <div class="flex h-screen w-screen overflow-hidden">
     <div ref="ani" class="fixed left-0 translate-x-[150%]">
-      <Ani class="!w-auto !h-screen" />
+      <Ani class="!h-screen !w-auto" />
     </div>
     <div
       ref="sc1"
-      class="!w-screen !h-screen flex justify-center items-center font-au text-[2rem] tracking-widest"
+      class="flex !h-screen !w-screen items-center justify-center font-au text-[2rem] tracking-widest"
     >
       UNKUZ
     </div>
 
     <div
       ref="sc2"
-      class="!w-screen !h-screen font-cuz uppercase justify-center items-center hidden font-bold tracking-tight"
+      class="hidden !h-screen !w-screen items-center justify-center font-cuz font-bold uppercase tracking-tight"
     >
       _This site is under development
     </div>

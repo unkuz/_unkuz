@@ -4,8 +4,8 @@ export const useSyncDarkMode = () => {
 
   const handle = () => {
     document
-      .querySelector("html")!
-      .classList[darkMode.value ? "add" : "remove"]("dark");
+      .querySelector('html')!
+      .classList[darkMode.value ? 'add' : 'remove']('dark');
   };
 
   onMounted(handle);

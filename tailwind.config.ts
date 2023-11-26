@@ -1,27 +1,27 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 export default {
-  darkMode: "class",
+  darkMode: 'class',
   content: [
-    "./pages/**/*.{vue,js,ts,jsx,tsx}",
-    "./layouts/**/*.{vue,js,ts,jsx,tsx}",
-    "./components/**/*.{vue,js,ts,jsx,tsx}",
-    "./app/**/*.{vue,js,ts,jsx,tsx}",
+    './pages/**/*.{vue,js,ts,jsx,tsx}',
+    './layouts/**/*.{vue,js,ts,jsx,tsx}',
+    './components/**/*.{vue,js,ts,jsx,tsx}',
+    './app/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        cuz: "Cuz",
-        au: "August",
+        cuz: 'Cuz',
+        au: 'August',
       },
       keyframes: {
         loading: {
-          "0%": { left: "-100%", width: "100%" },
-          "100%": { left: "100%", width: "100%" },
+          '0%': { left: '-100%', width: '100%' },
+          '100%': { left: '100%', width: '100%' },
         },
       },
       animation: {
-        loading: "loading 1s ease-in-out infinite",
+        loading: 'loading 1s ease-in-out infinite',
       },
     },
   },

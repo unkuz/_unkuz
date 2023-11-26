@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { navigation } from "@/config/app";
+import { navigation } from '@/config/app';
 const route = useRoute();
 const globalS = uGlobalS();
 </script>
 
 <template>
   <header
-    class="w-full flex justify-between items-center fixed sm:pt-[50px] top-0 left-0 sm:px-[100px] px-[20px] z-10 bg-[#fdfdfd0e] backdrop-blur-[5px] dark:bg-black"
+    class="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-[#fdfdfd0e] px-[20px] backdrop-blur-[5px] dark:bg-black sm:px-[100px] sm:pt-[50px]"
   >
     <div
       title="Unkuz"
-      class="flex items-center gap-[10px] font-au py-[20px] sm:py-0"
+      class="flex items-center gap-[10px] py-[20px] font-au sm:py-0"
     >
       <NuxtLink to="/">
         <div
           :class="[
-            'text-[1.7rem] tracking-widest select-none',
+            'select-none text-[1.7rem] tracking-widest',
             {
               'text-[#34d0ff]': route.path === '/',
             },

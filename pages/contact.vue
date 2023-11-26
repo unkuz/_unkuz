@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center pt-[30px] min-h-screen"
+    class="flex min-h-screen w-full flex-col items-center justify-center pt-[30px]"
   >
     <h1 class="text-[1rem]">Contact</h1>
     <div class="flex flex-col">
@@ -9,20 +9,20 @@
       >
       <a class="underline" href="tel:+84888388859">+84 888388859</a>
     </div>
-    <div class="flex gap-[20px] mt-[30px] [&>svg]:cursor-pointer">
+    <div class="mt-[30px] flex gap-[20px] [&>svg]:cursor-pointer">
       <div title="I'm not available">
-        <Facebook_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
+        <Facebook_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
 
       <div title="I'm not available">
-        <Twitter_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
+        <Twitter_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
       <div title="I'm not available">
-        <Instagram_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
+        <Instagram_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
       <NuxtLink to="https://github.com/unkuz" title="Github" target="_blank">
         <Github_invert
-          class="[&>path]:!fill-transparent !w-[17px] !h-[17px] dark:[&>path]:stroke-white"
+          class="!h-[17px] !w-[17px] [&>path]:!fill-transparent dark:[&>path]:stroke-white"
         />
       </NuxtLink>
     </div>
@@ -30,12 +30,12 @@
 </template>
 
 <script setup lang="ts">
-import Facebook_invert from "@/assets/svg/facebook_invert.svg";
-import Instagram_invert from "@/assets/svg/instagram_invert.svg";
-import Twitter_invert from "@/assets/svg/twitter_invert.svg";
-import Github_invert from "@/assets/svg/github_invert.svg";
+import Facebook_invert from '@/assets/svg/facebook_invert.svg';
+import Instagram_invert from '@/assets/svg/instagram_invert.svg';
+import Twitter_invert from '@/assets/svg/twitter_invert.svg';
+import Github_invert from '@/assets/svg/github_invert.svg';
 
 useHead({
-  title: "Unkuz | Contact Page",
+  title: 'Unkuz | Contact Page',
 });
 </script>

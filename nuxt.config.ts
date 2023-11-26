@@ -1,58 +1,58 @@
-import { VitePWA } from "vite-plugin-pwa";
+import { VitePWA } from 'vite-plugin-pwa';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "@nuxtjs/tailwindcss",
-    "nuxt-svgo",
-    "nuxt-lodash",
-    "@nuxt/image",
-    "@vite-pwa/nuxt",
-    "@vueuse/nuxt",
-    "@nuxtjs/device",
-    "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
+    '@nuxtjs/tailwindcss',
+    'nuxt-svgo',
+    'nuxt-lodash',
+    '@nuxt/image',
+    '@vite-pwa/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/device',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   tailwindcss: {
-    cssPath: "~/scss/tw.scss",
+    cssPath: '~/scss/tw.scss',
   },
-  css: ["~/scss/main.scss"],
+  css: ['~/scss/main.scss'],
   pwa: {
     /* your pwa options */
   },
   app: {
     head: {
       meta: [
-        { name: "theme-color", content: "#000" },
+        { name: 'theme-color', content: '#000' },
         {
-          name: "viewport",
+          name: 'viewport',
           content:
-            "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
         },
       ],
     },
-    pageTransition: { name: "page", mode: "default" },
-    layoutTransition: { name: "layout", mode: "default" },
+    pageTransition: { name: 'page', mode: 'default' },
+    layoutTransition: { name: 'layout', mode: 'default' },
   },
   image: {
-    format: ["webp"],
+    format: ['webp'],
   },
   lodash: {
-    prefix: "_",
-    prefixSkip: ["string"],
+    prefix: '_',
+    prefixSkip: ['string'],
     upperAfterPrefix: false,
-    exclude: ["map"],
+    exclude: ['map'],
     alias: [
-      ["camelCase", "stringToCamelCase"], // => stringToCamelCase
-      ["kebabCase", "stringToKebab"], // => stringToKebab
-      ["isDate", "isLodashDate"], // => _isLodashDate
+      ['camelCase', 'stringToCamelCase'], // => stringToCamelCase
+      ['kebabCase', 'stringToKebab'], // => stringToKebab
+      ['isDate', 'isLodashDate'], // => _isLodashDate
     ],
   },
   piniaPersistedstate: {
     cookieOptions: {
-      sameSite: "strict",
+      sameSite: 'strict',
     },
-    storage: "localStorage",
+    storage: 'localStorage',
   },
 });

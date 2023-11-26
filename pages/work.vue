@@ -1,22 +1,22 @@
 <template>
   <div
-    class="w-full flex justify-center flex-col items-center pt-[30px] gap-[20px] min-h-screen"
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] pt-[30px]"
   >
     <div class="">Side Project</div>
 
     <NuxtImg
       v-if="dogEyesRight"
       src="/doge_right.png"
-      class="object-cover w-[170px]"
+      class="w-[170px] object-cover"
     />
-    <NuxtImg v-else src="/doge_left.png" class="object-cover w-[170px]" />
+    <NuxtImg v-else src="/doge_left.png" class="w-[170px] object-cover" />
     <div>There is no data here.</div>
   </div>
 </template>
 
 <script setup lang="ts">
 useHead({
-  title: "Unkuz | Work Page",
+  title: 'Unkuz | Work Page',
 });
 
 const dogEyesRight = ref(true);

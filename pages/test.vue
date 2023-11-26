@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import RollingText from "~/components/RollingText.vue";
+import RollingText from '~/components/RollingText.vue';
 </script>
 
 <template>

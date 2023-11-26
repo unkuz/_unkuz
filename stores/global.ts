@@ -1,4 +1,4 @@
-export const uGlobalS = defineStore("global", {
+export const uGlobalS = defineStore('global', {
   state: () => ({
     darkMode: false,
   }),

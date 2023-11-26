@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import SwipeContext from "@/components/SwipeContext.vue";
+import SwipeContext from '@/components/SwipeContext.vue';
 
 useHead({
-  title: "Unkuz",
+  title: 'Unkuz',
   meta: [
-    { name: "description", content: "Unkuz - Web developer based in Vietnam" },
+    { name: 'description', content: 'Unkuz - Web developer based in Vietnam' },
   ],
 });
 
@@ -13,7 +13,7 @@ useSyncDarkMode();
 
 <template>
   <div
-    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#fff] dark:selection:text-[#000] w-screen overflow-x-hidden"
+    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#fff] dark:selection:text-[#000]"
   >
     <NuxtLayout>
       <SwipeContext>
