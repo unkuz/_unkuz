@@ -4,7 +4,7 @@ import SwipeCtx from '@/ctx/SwipeCtx.vue';
 
 const { isMobile } = useDevice();
 
-const transitionDuration = computed(() => (isMobile ? '1s' : '0.3s'));
+const transitionDuration = computed(() => (isMobile ? '0.2s' : '0.3s'));
 
 useSyncDarkMode();
 </script>
