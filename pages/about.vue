@@ -29,7 +29,7 @@
             <NuxtIcon filled />
           </NuxtLink>
           <NuxtLink to="https://nextjs.org/ " target="_blank">
-            <NextIcon filled class="!text-[45px]" />
+            <NextIcon filled class="!text-[45px]  dark:invert" />
           </NuxtLink>
           <NuxtLink to="https://vuejs.org/" target="_blank">
             <VueIcon filled />
@@ -41,16 +41,16 @@
             <Pixi filled />
           </NuxtLink>
           <NuxtLink to="https://threejs.org/" target="_blank">
-            <ThreeJS filled />
+            <ThreeJS filled  class="dark:invert"/>
           </NuxtLink>
           <NuxtLink to="https://expressjs.com/" target="_blank">
-            <Express filled />
+            <Express filled class="dark:invert" />
           </NuxtLink>
           <NuxtLink to="https://nestjs.com/" target="_blank">
             <Nestjs filled />
           </NuxtLink>
           <NuxtLink to="https://www.djangoproject.com/" target="_blank">
-            <Django filled class="!text-[45px]" />
+            <Django filled class="!text-[45px] dark:invert" />
           </NuxtLink>
           <NuxtLink to="https://nodejs.org/en/" target="_blank">
             <Nodejs filled class="!text-[45px]" />

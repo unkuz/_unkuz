@@ -21,7 +21,9 @@
         <Instagram_invert class="cursor-not-allowed !w-[17px] !h-[17px]" />
       </div>
       <NuxtLink to="https://github.com/unkuz" title="Github" target="_blank">
-        <Github_invert class="[&>path]:!fill-transparent !w-[17px] !h-[17px]" />
+        <Github_invert
+          class="[&>path]:!fill-transparent !w-[17px] !h-[17px] dark:[&>path]:stroke-white"
+        />
       </NuxtLink>
     </div>
   </div>
