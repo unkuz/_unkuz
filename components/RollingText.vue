@@ -9,7 +9,7 @@ const el = ref<HTMLDivElement | null>(null);
 
 const onHover = () => {
   console.log("el.value?.childNodes", el.value?.childNodes);
-  // el.value?.childNodes.forEach((i) => console.log(i.childNodes));
+  el.value?.childNodes.forEach((i) => console.log(i.childNodes));
 
   el.value?.childNodes.forEach((i) => {
     if (i.nodeType !== 3) {
