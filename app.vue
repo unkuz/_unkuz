@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import SwipeCtx from '@/ctx/SwipeCtx.vue';
-// import CustomScrollbar from 'custom-vue-scrollbar';
 
 const { isMobile } = useDevice();
 
@@ -13,12 +12,12 @@ useSyncDarkMode();
   <div
     class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#43fd2a] dark:selection:text-[#000]"
   >
-    <!-- <CustomScrollbar
+    <custom-scrollbar
       :style="{ width: '100vw', height: '100vh' }"
       :thumbWidth="6"
       :autoExpand="false"
       :autoHide="false"
-    > -->
+    >
     <NuxtLayout>
       <SwipeCtx>
         <VitePwaManifest />
@@ -26,7 +25,7 @@ useSyncDarkMode();
         <NuxtPage />
       </SwipeCtx>
     </NuxtLayout>
-    <!-- </CustomScrollbar> -->
+    </custom-scrollbar>
   </div>
 </template>
 

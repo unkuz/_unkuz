@@ -60,4 +60,7 @@ export default defineNuxtConfig({
     },
     storage: 'localStorage',
   },
+  plugins:[
+    { src: '~/plugins/scrollbar', mode: 'client' }
+  ]
 });
