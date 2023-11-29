@@ -13,11 +13,6 @@ useSyncDarkMode();
     class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#43fd2a] dark:selection:text-[#000]"
   >
     <VitePwaManifest />
-    <SeoKit />
-    <!-- a. Generates browser screenshots for every page -->
-    <OgImageScreenshot />
-    <!-- b. Generate satori images for every page (uses the default template) -->
-    <OgImageStatic />
     <custom-scrollbar
       :style="{ width: '100vw', height: '100vh' }"
       :thumbWidth="6"
@@ -26,7 +21,6 @@ useSyncDarkMode();
     >
       <NuxtLayout>
         <SwipeCtx>
-          <!-- <NuxtLoadingIndicator /> -->
           <NuxtPage />
         </SwipeCtx>
       </NuxtLayout>

@@ -12,8 +12,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     'nuxt-typed-router',
+    '@nuxtseo/module',
   ],
-  // extends: ['nuxt-seo-kit'],
   components: {
     dirs: ['~/components', '~/composables', '~/ctx', '~/utils'],
   },
@@ -38,7 +38,6 @@ export default defineNuxtConfig({
           content: 'Unkuz - Web developer, Music Producer based in Vietnam',
         },
       ],
-      titleTemplate: '%pageTitle %titleSeparator',
     },
     pageTransition: { name: 'page', mode: 'default' },
     layoutTransition: { name: 'layout', mode: 'default' },
@@ -64,4 +63,7 @@ export default defineNuxtConfig({
     storage: 'localStorage',
   },
   plugins: [{ src: '~/plugins/scrollbar', mode: 'client' }],
+  site: {
+    name: 'Unkuz',
+  },
 });
