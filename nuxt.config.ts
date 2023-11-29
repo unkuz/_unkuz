@@ -11,14 +11,9 @@ export default defineNuxtConfig({
     '@nuxtjs/device',
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
-    '@nuxtjs/robots',
-    'nuxt-simple-sitemap',
-    'nuxt-schema-org',
-    'nuxt-typed-router'
+    'nuxt-typed-router',
   ],
-  extends:[
-    'nuxt-seo-kit'
-  ],
+  // extends: ['nuxt-seo-kit'],
   components: {
     dirs: ['~/components', '~/composables', '~/ctx', '~/utils'],
   },
@@ -43,7 +38,7 @@ export default defineNuxtConfig({
           content: 'Unkuz - Web developer, Music Producer based in Vietnam',
         },
       ],
-      titleTemplate: '%pageTitle %titleSeparator'
+      titleTemplate: '%pageTitle %titleSeparator',
     },
     pageTransition: { name: 'page', mode: 'default' },
     layoutTransition: { name: 'layout', mode: 'default' },
@@ -68,21 +63,5 @@ export default defineNuxtConfig({
     },
     storage: 'localStorage',
   },
-  plugins:[
-    { src: '~/plugins/scrollbar', mode: 'client' }
-  ],
-  robots: {
-    /* module options */
-  },
-  runtimeConfig: {
-    public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://unkuz.vercel.app',
-      siteName: 'Unkuz',
-      siteDescription: 'Unkuz - Web developer, Music Producer based in Vietnam',
-      language: 'en', // prefer more explicit language codes like `en-AU` over `en`
-    }
-  },
-  linkChecker: {
-    failOn404: true,
-  }
+  plugins: [{ src: '~/plugins/scrollbar', mode: 'client' }],
 });
