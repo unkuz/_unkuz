@@ -1,13 +1,13 @@
 <template>
   <div
-    class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px]"
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto sm:w-[500px]"
   >
     <h1 class="text-[1rem]">About</h1>
-    <div class="">
-      <NuxtImg src="/unkuz.jpeg" class="w-[350px] object-cover" />
+    <div class="w-full">
+      <NuxtImg src="/unkuz.jpeg" class="w-full object-cover" />
     </div>
 
-    <div class="mx-auto sm:w-[550px]">
+    <div class="">
       <p class="text-justify indent-8">
         <span
           >Unkuz is the code name of Nguyen Ba Cuong, a creative web developer

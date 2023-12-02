@@ -24,11 +24,10 @@ watch(appReady, (val) => {
     }
 
     const tl = gsap.timeline({});
-    (() =>
-      tl
-        .set(ani.value, {
-          translateX: '100%',
-        })
+    setTimeout(() => {
+      tl.set(ani.value, {
+        translateX: '100%',
+      })
         .set(pre.value, {
           display: 'flex',
         })
@@ -50,7 +49,8 @@ watch(appReady, (val) => {
           translateX: '-100%',
           duration: 0.5,
           ease: 'linear',
-        }))();
+        });
+    }, 1_500);
   }
 });
 </script>
