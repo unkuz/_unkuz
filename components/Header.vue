@@ -14,16 +14,7 @@ const globalS = uGlobalS();
       class="flex items-center gap-[10px] py-[20px] font-au sm:py-0"
     >
       <NuxtLink to="/">
-        <div
-          :class="[
-            'select-none text-[1.7rem] tracking-widest',
-            {
-              'text-[#34d0ff]': route.path === '/',
-            },
-          ]"
-        >
-          UNKUZ
-        </div>
+        <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div>
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
@@ -37,7 +28,7 @@ const globalS = uGlobalS();
             },
           ]"
         >
-          {{ i.name }}
+          <TextRolling :text="i.name" />
         </div>
       </NuxtLink>
     </div>

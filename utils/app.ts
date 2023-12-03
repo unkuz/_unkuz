@@ -4,3 +4,13 @@ export const signature = () =>
     'background: black; color: rgb(52 208 255);',
     'https://github.com/unkuz/',
   );
+
+export const rmTextNodeHelper = (nodes: NodeListOf<ChildNode>): ChildNode[] => {
+  const result: ChildNode[] = [];
+  nodes.forEach((i) => {
+    if (i.nodeName !== '#text') {
+      result.push(i);
+    }
+  });
+  return result;
+};
