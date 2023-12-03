@@ -26,8 +26,6 @@
         />
       </NuxtLink>
     </div>
-    <!-- <RollingText text="UNKUZ" /> -->
-    <TextRolling text="UNKUZ" />
   </div>
 </template>
 
