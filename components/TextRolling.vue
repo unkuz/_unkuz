@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import gsap from 'gsap';
 
-withDefaults(defineProps<{ text: string; height: number }>(), {
-  height: 16,
+withDefaults(defineProps<{ text: string; height?: number }>(), {
+  height: 15,
 });
 
 const el = ref<HTMLDivElement | null>(null);
 
 const onHover = () => {
   rmTextNodeHelper(el.value!.childNodes).forEach((i) => {
-    console.log('i', i.childNodes);
     gsap.to(rmTextNodeHelper(i.childNodes), {
       y: '-100%',
       stagger: {
-        each: 0.05,
+        each: 0.0015,
       },
     });
   });
@@ -23,7 +22,7 @@ const onLeave = () => {
     gsap.to(rmTextNodeHelper(i.childNodes), {
       transform: 'translateY(0%)',
       stagger: {
-        each: 0.05,
+        each: 0.0015,
       },
     });
   });

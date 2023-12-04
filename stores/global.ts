@@ -2,6 +2,7 @@ export const uGlobalS = defineStore('global', {
   state: () => ({
     darkMode: false,
     appReady: false,
+    needAnimation: false,
   }),
   getters: {},
   actions: {
