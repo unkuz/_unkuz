@@ -35,7 +35,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'description',
-          content: 'Unkuz - Web developer, Music Producer based in Vietnam',
+          content: 'Unkuz - Web developer, upcoming Music Producer based in Vietnam',
         },
       ],
     },

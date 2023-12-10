@@ -28,55 +28,59 @@
         <div
           class="flex flex-wrap gap-x-[20px] gap-y-[5px] [&_svg]:text-[30px]"
         >
-          <NuxtLink to="https://tailwindcss.com/" target="_blank">
+          <NuxtLink to="https://tailwindcss.com/" target="_blank" external>
             <Tailwind filled />
           </NuxtLink>
-          <NuxtLink to="https://react.dev/" target="_blank">
+          <NuxtLink to="https://react.dev/" target="_blank" external>
             <ReactIcon filled target="_blank" />
           </NuxtLink>
-          <NuxtLink to="https://nuxt.com/" target="_blank">
+          <NuxtLink to="https://nuxt.com/" target="_blank" external>
             <NuxtIcon filled />
           </NuxtLink>
-          <NuxtLink to="https://nextjs.org/ " target="_blank">
+          <NuxtLink to="https://nextjs.org/ " target="_blank" external>
             <NextIcon filled class="!text-[45px] dark:invert" />
           </NuxtLink>
-          <NuxtLink to="https://vuejs.org/" target="_blank">
+          <NuxtLink to="https://vuejs.org/" target="_blank" external>
             <VueIcon filled />
           </NuxtLink>
-          <NuxtLink to="https://lodash.com/" target="_blank">
+          <NuxtLink to="https://lodash.com/" target="_blank" external>
             <Lodash filled />
           </NuxtLink>
-          <NuxtLink to="https://pixijs.com/" target="_blank">
+          <NuxtLink to="https://pixijs.com/" target="_blank" external>
             <Pixi filled />
           </NuxtLink>
-          <NuxtLink to="https://threejs.org/" target="_blank">
+          <NuxtLink to="https://threejs.org/" target="_blank" external>
             <ThreeJS filled class="dark:invert" />
           </NuxtLink>
-          <NuxtLink to="https://expressjs.com/" target="_blank">
+          <NuxtLink to="https://expressjs.com/" target="_blank" external>
             <Express filled class="dark:invert" />
           </NuxtLink>
-          <NuxtLink to="https://nestjs.com/" target="_blank">
+          <NuxtLink to="https://nestjs.com/" target="_blank" external>
             <Nestjs filled />
           </NuxtLink>
-          <NuxtLink to="https://www.djangoproject.com/" target="_blank">
+          <NuxtLink
+            to="https://www.djangoproject.com/"
+            target="_blank"
+            external
+          >
             <Django filled class="!text-[45px] dark:invert" />
           </NuxtLink>
-          <NuxtLink to="https://nodejs.org/en/" target="_blank">
+          <NuxtLink to="https://nodejs.org/en/" target="_blank" external>
             <Nodejs filled class="!text-[45px]" />
           </NuxtLink>
-          <NuxtLink to="https://socket.io/" target="_blank">
+          <NuxtLink to="https://socket.io/" target="_blank" external>
             <Socketio filled />
           </NuxtLink>
-          <NuxtLink to="https://www.python.org/" target="_blank">
+          <NuxtLink to="https://www.python.org/" target="_blank" external>
             <Python filled />
           </NuxtLink>
-          <NuxtLink to="https://www.mongodb.com/" target="_blank">
+          <NuxtLink to="https://www.mongodb.com/" target="_blank" external>
             <Mongodb filled />
           </NuxtLink>
-          <NuxtLink to="https://www.mysql.com/" target="_blank">
+          <NuxtLink to="https://www.mysql.com/" target="_blank" external>
             <Mysql filled />
           </NuxtLink>
-          <NuxtLink to="https://www.postgresql.org/" target="_blank">
+          <NuxtLink to="https://www.postgresql.org/" target="_blank" external>
             <Postgresql filled />
           </NuxtLink>
         </div>
@@ -84,13 +88,13 @@
         <div
           class="flex flex-wrap gap-x-[20px] gap-y-[8px] [&_svg]:text-[30px]"
         >
-          <NuxtLink to="https://www.framer.com/" target="_blank">
+          <NuxtLink to="https://www.framer.com/" target="_blank" external>
             <Framerjs filled />
           </NuxtLink>
-          <NuxtLink to="https://jestjs.io/" target="_blank">
+          <NuxtLink to="https://jestjs.io/" target="_blank" external>
             <Jest filled />
           </NuxtLink>
-          <NuxtLink to="https://www.figma.com/" target="_blank">
+          <NuxtLink to="https://www.figma.com/" target="_blank" external>
             <Figma filled />
           </NuxtLink>
         </div>
@@ -98,16 +102,16 @@
         <div
           class="flex flex-wrap gap-x-[20px] gap-y-[8px] [&_svg]:text-[30px]"
         >
-          <NuxtLink to="https://www.docker.com/" target="_blank">
+          <NuxtLink to="https://www.docker.com/" target="_blank" external>
             <Docker filled />
           </NuxtLink>
-          <NuxtLink to="https://www.datadoghq.com/" target="_blank">
+          <NuxtLink to="https://www.datadoghq.com/" target="_blank" external>
             <Datadog filled class="!text-[45px]" s />
           </NuxtLink>
-          <NuxtLink to="https://analytics.google.com/" target="_blank">
+          <NuxtLink to="https://analytics.google.com/" target="_blank" external>
             <Google_analytics filled />
           </NuxtLink>
-          <NuxtLink to="https://www.travis-ci.com/" target="_blank">
+          <NuxtLink to="https://www.travis-ci.com/" target="_blank" external>
             <TravisCI filled />
           </NuxtLink>
         </div>

@@ -20,7 +20,12 @@
       <div title="I'm not available">
         <Instagram_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
-      <NuxtLink to="https://github.com/unkuz" title="Github" target="_blank">
+      <NuxtLink
+        to="https://github.com/unkuz"
+        title="Github"
+        target="_blank"
+        external
+      >
         <Github_invert
           class="!h-[17px] !w-[17px] [&>path]:!fill-transparent dark:[&>path]:stroke-white"
         />

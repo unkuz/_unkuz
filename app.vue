@@ -28,20 +28,4 @@ useSyncDarkMode();
   </div>
 </template>
 
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all v-bind(transitionDuration);
-}
-
-.page-enter-from {
-  opacity: 0;
-  transform: translateX(100vw);
-  filter: blur(5px);
-}
-.page-leave-to {
-  opacity: 0;
-  transform: translateX(-100vw);
-  filter: blur(5px);
-}
-</style>
+<style></style>
