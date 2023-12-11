@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto md:w-[700px] lg:w-[800px]"
+    class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto sm:w-[500px]"
   >
     <h1 class="text-[1rem]">About</h1>
     <div class="w-full">
