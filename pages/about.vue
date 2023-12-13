@@ -6,7 +6,7 @@
     <div class="">
       <p class="text-justify indent-8">
         <span
-          >Unkuz is the code name of Nguyen Ba Cuong, a creative web developer
+          >Unkuz, also known as Nguyen Ba Cuong, is a creative web developer
           with 2.5+ years of experience working in building website. Proficient
           in HTML, CSS, JavaScript, TypeScript, Python,...: plus modern
           libraries, frameworks and mastering the latest front-end technologies.
@@ -117,7 +117,7 @@
         becoming a music producer. In recent months, I've been inspired by the
         future bounce music genre. Producers who inspire me at the moment are:
         rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024
-        I can release a song sound something similar ⭐
+        I can release a song sound something similar 🤣
       </p>
     </div>
   </div>
