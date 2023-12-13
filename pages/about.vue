@@ -3,10 +3,6 @@
     class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto sm:w-[500px]"
   >
     <h1 class="text-[1rem]">About</h1>
-    <div class="w-full">
-      <NuxtImg src="/unkuz.jpeg" class="w-full object-cover" />
-    </div>
-
     <div class="">
       <p class="text-justify indent-8">
         <span
