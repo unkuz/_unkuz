@@ -27,6 +27,9 @@
           <NuxtLink to="https://tailwindcss.com/" target="_blank" external>
             <Tailwind filled />
           </NuxtLink>
+          <NuxtLink to="https://gsap.com/" target="_blank" external>
+            <Gsap filled target="_blank" />
+          </NuxtLink>
           <NuxtLink to="https://react.dev/" target="_blank" external>
             <ReactIcon filled target="_blank" />
           </NuxtLink>
@@ -148,7 +151,7 @@ import Google_analytics from '@/assets/svg/google_analytics.svg';
 import TravisCI from '@/assets/svg/travisCI.svg';
 import Pixi from '@/assets/svg/pixi.svg';
 import ThreeJS from '@/assets/svg/threejs.svg';
-
+import Gsap from '@/assets/svg/gsap.svg';
 useHead({
   title: 'Unkuz | About Page',
 });
