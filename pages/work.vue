@@ -9,7 +9,7 @@
       src="/doge_right.png"
       class="w-[140px] object-cover"
     />
-    <NuxtImg v-else src="/doge_left.png" class="w-[170px] object-cover" />
+    <NuxtImg v-else src="/doge_left.png" class="w-[140px] object-cover" />
     <div>There is no data here.</div>
   </div>
 </template>
