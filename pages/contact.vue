@@ -18,7 +18,7 @@
         <Twitter_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
       <div to="https://www.instagram.com/unkuz" title="Instagram" target="_blank" external>
-        <Instagram_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
+        <Instagram_invert class="!h-[17px] !w-[17px]" />
       </div>
       <NuxtLink
         to="https://github.com/unkuz"
