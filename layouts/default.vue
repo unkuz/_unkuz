@@ -15,12 +15,14 @@ const { isMobile } = useDevice();
 watch(appReady, (val) => {
   if (val) {
     if (isMobile) {
-      gsap.set(pre.value, {
-        display: 'none',
-      });
-      gsap.set(main.value, {
-        display: 'block',
-      });
+      setTimeout(() => {
+        gsap.set(pre.value, {
+          display: 'none',
+        });
+        gsap.set(main.value, {
+          display: 'block',
+        });
+      }, 2_000);
       return;
     }
 
@@ -51,7 +53,7 @@ watch(appReady, (val) => {
           duration: 0.5,
           ease: 'linear',
         });
-    }, 1_500);
+    }, 2_500);
   }
 });
 </script>

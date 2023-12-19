@@ -12,7 +12,7 @@ const onHover = () => {
     gsap.to(rmTextNodeHelper(i.childNodes), {
       y: '-100%',
       stagger: {
-        each: 0.0015,
+        each: 0.02,
       },
     });
   });
@@ -22,7 +22,7 @@ const onLeave = () => {
     gsap.to(rmTextNodeHelper(i.childNodes), {
       transform: 'translateY(0%)',
       stagger: {
-        each: 0.0015,
+        each: 0.02,
       },
     });
   });

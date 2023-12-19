@@ -9,9 +9,7 @@ useSyncDarkMode();
 </script>
 
 <template>
-  <div
-    class="font-cuz selection:bg-[#000] selection:text-[#fff] dark:selection:bg-[#43fd2a] dark:selection:text-[#000]"
-  >
+  <AppStyle>
     <VitePwaManifest />
     <custom-scrollbar
       :style="{ width: '100vw', height: '100vh' }"
@@ -25,7 +23,7 @@ useSyncDarkMode();
         </SwipeCtx>
       </NuxtLayout>
     </custom-scrollbar>
-  </div>
+  </AppStyle>
 </template>
 
 <style></style>
