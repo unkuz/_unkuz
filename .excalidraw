@@ -5,8 +5,8 @@
   "elements": [
     {
       "type": "text",
-      "version": 99,
-      "versionNonce": 1687700206,
+      "version": 100,
+      "versionNonce": 1386394287,
       "isDeleted": false,
       "id": "10oY8-wDrwey1Sgzi9xky",
       "fillStyle": "solid",
@@ -26,7 +26,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1701582047497,
+      "updated": 1703012670693,
       "link": null,
       "locked": false,
       "fontSize": 36,
