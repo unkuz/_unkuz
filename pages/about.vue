@@ -152,7 +152,4 @@ import TravisCI from '@/assets/svg/travisCI.svg';
 import Pixi from '@/assets/svg/pixi.svg';
 import ThreeJS from '@/assets/svg/threejs.svg';
 import Gsap from '@/assets/svg/gsap.svg';
-useHead({
-  title: 'Unkuz | About Page',
-});
 </script>

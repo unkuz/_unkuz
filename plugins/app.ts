@@ -21,9 +21,9 @@ export default defineNuxtPlugin((nuxtApp) => {
   });
 
   nuxtApp.hook('page:start', () => {
-    console.log('page:transition:start');
+    // console.log('page:transition:start');
   });
   nuxtApp.hook('page:transition:finish', () => {
-    console.log('page:transition:finish');
+    // console.log('page:transition:finish');
   });
 });

@@ -39,8 +39,4 @@ import Facebook_invert from '@/assets/svg/facebook_invert.svg';
 import Instagram_invert from '@/assets/svg/instagram_invert.svg';
 import Twitter_invert from '@/assets/svg/twitter_invert.svg';
 import Github_invert from '@/assets/svg/github_invert.svg';
-
-useHead({
-  title: 'Unkuz | Contact Page',
-});
 </script>
