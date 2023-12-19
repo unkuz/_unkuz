@@ -17,9 +17,9 @@
       <div title="I'm not available">
         <Twitter_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
-      <div title="I'm not available">
-        <Instagram_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
-      </div>
+      <NuxtLink to="https://www.instagram.com/unkuz" title="Instagram" target="_blank" external>
+        <Instagram_invert class="!h-[17px] !w-[17px]" />
+      </NuxtLink>
       <NuxtLink
         to="https://github.com/unkuz"
         title="Github"
