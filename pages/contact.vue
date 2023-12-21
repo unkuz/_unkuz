@@ -4,16 +4,10 @@
   >
     <h1 class="text-[1rem]">Contact</h1>
     <div class="mt-[20px] flex flex-col">
-      <a
-        class="text-center underline decoration-[#00b3ff] decoration-wavy decoration-1"
-        href="mailto:hi.unkuz@gmail.com"
+      <a class="text-center" href="mailto:hi.unkuz@gmail.com"
         >hi.unkuz@gmail.com</a
       >
-      <a
-        class="text-center underline decoration-[#00b3ff] decoration-wavy decoration-1"
-        href="tel:+84888388859"
-        >+84 888388859</a
-      >
+      <a class="text-center" href="tel:+84888388859">+84 888388859</a>
     </div>
     <div class="mt-[10px] flex gap-[20px] [&>svg]:cursor-pointer">
       <div title="I'm not available">
