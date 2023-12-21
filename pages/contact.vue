@@ -3,13 +3,19 @@
     class="flex min-h-screen w-full flex-col items-center justify-center pt-[30px]"
   >
     <h1 class="text-[1rem]">Contact</h1>
-    <div class="flex flex-col">
-      <a class="underline" href="mailto:hi.unkuz@gmail.com"
+    <div class="mt-[20px] flex flex-col">
+      <a
+        class="text-center underline decoration-[#00b3ff] decoration-wavy decoration-1"
+        href="mailto:hi.unkuz@gmail.com"
         >hi.unkuz@gmail.com</a
       >
-      <a class="underline" href="tel:+84888388859">+84 888388859</a>
+      <a
+        class="text-center underline decoration-[#00b3ff] decoration-wavy decoration-1"
+        href="tel:+84888388859"
+        >+84 888388859</a
+      >
     </div>
-    <div class="mt-[30px] flex gap-[20px] [&>svg]:cursor-pointer">
+    <div class="mt-[10px] flex gap-[20px] [&>svg]:cursor-pointer">
       <div title="I'm not available">
         <Facebook_invert class="!h-[17px] !w-[17px] cursor-not-allowed" />
       </div>
