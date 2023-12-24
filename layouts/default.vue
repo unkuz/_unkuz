@@ -72,7 +72,7 @@ watch(appReady, (val) => {
     </div>
     <div ref="main" class="mx-auto hidden w-full px-[20px] md:px-0">
       <Header />
-      <div class="mx-auto overflow-x-hidden sm:w-[700px]">
+      <div class="mx-auto sm:w-[700px]">
         <slot />
       </div>
     </div>

@@ -5,11 +5,9 @@
     <div class="">Side Project</div>
 
     <NuxtImg
-      v-if="dogEyesRight"
-      src="/doge_right.png"
-      class="w-[140px] object-cover"
+      :src="dogEyesRight ? '/doge_right.png' : '/doge_left.png'"
+      class="w-[150px] object-cover"
     />
-    <NuxtImg v-else src="/doge_left.png" class="w-[140px] object-cover" />
     <div>There is no data here.</div>
   </div>
 </template>
