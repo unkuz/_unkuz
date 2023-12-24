@@ -40,7 +40,7 @@ const onLeave = () => {
       lineHeight: `${height}px`,
     }"
   >
-    <div v-for="i in 2" :key="i" class="flex last:text-[#34d0ff]">
+    <div v-for="i in 2" :key="i" class="flex last:text-[#c534ff]">
       <span
         v-for="(j, idx) in text.replaceAll(' ', '\xa0').split('')"
         class="inline-block"

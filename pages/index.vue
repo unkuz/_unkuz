@@ -2,7 +2,7 @@
   <div
     class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] pt-[30px]"
   >
-    <div class="">Side Project</div>
+    <div class="text-[#c534ff]">Side Project</div>
 
     <NuxtImg
       :src="dogEyesRight ? '/doge_right.png' : '/doge_left.png'"
