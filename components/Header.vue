@@ -13,13 +13,13 @@ const globalS = uGlobalS();
       title="Unkuz"
       class="flex items-center gap-[10px] py-[20px] font-au sm:py-0"
     >
-      <NuxtLink to="/">
+      <NuxtLink to="/" replace>
         <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div>
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
       <NightMode @click="globalS.toggleDarkMode" />
-      <NuxtLink v-for="(i, idx) in navigation" :to="i.path" :key="idx">
+      <NuxtLink v-for="(i, idx) in navigation" :to="i.path" :key="idx" replace>
         <div
           :class="[
             ' uppercase',
