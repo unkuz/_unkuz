@@ -2,7 +2,7 @@
   <div
     class="flex min-h-screen w-full flex-col items-center justify-center pt-[30px]"
   >
-    <h1 class="text-[1rem] text-[#c534ff]">Contact</h1>
+    <h1 class="text-[1rem] uppercase">Contact</h1>
     <div class="mt-[20px] flex flex-col">
       <a class="text-center" href="mailto:hi.unkuz@gmail.com"
         >hi.unkuz@gmail.com</a

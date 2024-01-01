@@ -2,7 +2,7 @@
   <div
     class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto sm:w-[500px]"
   >
-    <h1 class="text-[1rem] text-[#c534ff]">About</h1>
+    <h1 class="text-[1rem] uppercase">About</h1>
     <div class="">
       <p class="text-justify indent-8">
         <span
