@@ -22,11 +22,12 @@ watch(appReady, (val) => {
         gsap.set(main.value, {
           display: 'block',
         });
-      }, 2_000);
+      }, 3_000);
       return;
     }
 
     const tl = gsap.timeline({});
+
     setTimeout(() => {
       tl.set(ani.value, {
         translateX: '100%',
