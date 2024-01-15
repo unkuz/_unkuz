@@ -3,6 +3,7 @@ import SwipeCtx from '@/ctx/SwipeCtx.vue';
 
 useSyncDarkMode();
 const { isMobile } = useDevice();
+const transitionDuration = computed(()=> isMobile ? '0s': '0.3s')
 </script>
 
 <template>
@@ -26,7 +27,8 @@ const { isMobile } = useDevice();
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.5s;
+  transition: all v-bind(transitionDuration);
+
 }
 .page-enter-from,
 .page-leave-to {
