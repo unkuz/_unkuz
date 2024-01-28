@@ -17,6 +17,7 @@ const onHover = () => {
     });
   });
 };
+
 const onLeave = () => {
   rmTextNodeHelper(el.value!.childNodes).forEach((i) => {
     gsap.to(rmTextNodeHelper(i.childNodes), {

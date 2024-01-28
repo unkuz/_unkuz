@@ -30,8 +30,8 @@ export default defineNuxtConfig({
       name: 'Unkuz',
       short_name: 'Unkuz',
       description: 'Unkuz',
-      theme_color: '#1867c0',
-      background_color: '#1867c0',
+      theme_color: '#000',
+      background_color: '#000',
       icons: [
         {
           src: 'icon-96x96.png',
