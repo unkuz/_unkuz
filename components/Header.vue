@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { navigation } from '@/config/app';
+import TextRolling from '@/components/TextRolling.vue';
 
 const route = useRoute();
 const globalS = uGlobalS();
+
+const magicName = (selectedPath: string, routePath: string, name: string) =>
+  _isEqual(selectedPath, routePath) ? '>' + name : name;
 </script>
 
 <template>
@@ -28,7 +32,7 @@ const globalS = uGlobalS();
             },
           ]"
         >
-          <TextRolling :text="i.name" />
+          <TextRolling :text="magicName(route.path, i.path, i.name)" />
         </div>
       </NuxtLink>
     </div>

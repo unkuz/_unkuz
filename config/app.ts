@@ -1,14 +1,14 @@
 export const navigation = [
   {
-    name: '_work',
+    name: 'work',
     path: '/',
   },
   {
-    name: '_about',
+    name: 'about',
     path: '/about',
   },
   {
-    name: '_contact',
+    name: 'contact',
     path: '/contact',
   },
 ];
