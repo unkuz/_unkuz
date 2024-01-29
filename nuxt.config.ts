@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     dirs: ['~/components', '~/composables', '~/ctx', '~/utils'],
   },
   tailwindcss: {
-    cssPath: '~/scss/tw.scss',
+    exposeConfig: true,
+    viewer: true,
   },
   css: ['~/scss/main.scss'],
   pwa: {
