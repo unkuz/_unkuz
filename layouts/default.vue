@@ -54,7 +54,7 @@ watch(appReady, (val) => {
           duration: 0.5,
           ease: 'linear',
         });
-    }, 2_500);
+    }, 0);
   }
 });
 </script>
@@ -75,6 +75,11 @@ watch(appReady, (val) => {
       <Header />
       <div class="mx-auto sm:w-[700px]">
         <slot />
+      </div>
+      <div
+        class="fixed bottom-[20px] right-1/2 translate-x-1/2 sm:bottom-[50px] sm:right-[100px] sm:translate-x-0"
+      >
+        <Miracle />
       </div>
     </div>
   </div>
