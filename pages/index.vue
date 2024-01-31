@@ -8,11 +8,12 @@
       :src="dogEyesRight ? '/doge_right.png' : '/doge_left.png'"
       class="w-[160px] object-cover"
     />
-    <div>Data is updating...</div>
+    <div>{{ textUpdate }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
+const textUpdate = ref('Data is updating ...');
 const dogEyesRight = ref(true);
 const { x } = useMouse();
 
