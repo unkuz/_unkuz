@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-[50px] w-[300px] items-center gap-[10px] rounded-[10px] !bg-[#ffd438] p-[5px] sm:w-[400px] [box-shadow:3px_3px_10px_#0000007f]"
+    class="flex sm:h-[50px] h-[60px] w-[calc(100vw-40px)] items-center gap-[10px] rounded-[10px] !bg-[#ffd438] p-[5px] sm:w-[400px] [box-shadow:3px_3px_10px_#0000007f]"
   >
     <div
       class="aspect-square h-full overflow-hidden rounded-[7px] bg-fuchsia-200"
