@@ -54,7 +54,7 @@ watch(appReady, (val) => {
           duration: 0.5,
           ease: 'linear',
         });
-    }, 0);
+    }, 2_500);
   }
 });
 </script>
