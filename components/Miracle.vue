@@ -11,7 +11,7 @@
         :alt="state.title"
       />
     </div>
-    <div class="flex flex-1 flex-col text-[.7rem]">
+    <div class="flex flex-1 flex-col text-[.7rem] text-black">
       <p class="">{{ state.title }}</p>
     </div>
     <audio
@@ -23,7 +23,7 @@
     <canvas ref="canvasRef" class="hidden h-[25px] w-[100px] sm:block" />
     <div class="mr-[5px] flex gap-[10px] *:cursor-pointer">
       <!-- <div>{{ '<' }}</div> -->
-      <div @click="togglePlay" class="*:w-[20px]">
+      <div @click="togglePlay" class="*:w-[20px] [*>path]:fill-black">
         <svg
           v-if="state.isPlay"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
           viewBox="0 0 24 24"
         >
           <path
-            fill="currentColor"
+            fill="black"
             d="M10.396 18.433L17 12l-6.604-6.433A2 2 0 0 0 7 7v10a2 2 0 0 0 3.396 1.433"
           />
         </svg>
@@ -44,7 +44,7 @@
           viewBox="0 0 24 24"
         >
           <path
-            fill="currentColor"
+            fill="black"
             d="M8 6a2 2 0 0 0-2 2v8a2 2 0 0 0 4 0V8a2 2 0 0 0-2-2m7 0a2 2 0 0 0-2 2v8a2 2 0 0 0 4 0V8a2 2 0 0 0-2-2"
           />
         </svg>
@@ -77,6 +77,7 @@ const state = reactive({
 });
 
 const start = () => {
+  state.isPlay = !audioEl.value?.paused
   if (!audioEl.value?.paused) {
     audioEl.value?.pause();
     return;
