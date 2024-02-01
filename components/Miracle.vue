@@ -11,7 +11,7 @@
         :alt="state.title"
       />
     </div>
-    <div class="flex flex-1 flex-col text-[.7rem] text-black">
+    <div class="flex flex-1 flex-col text-[.7rem] text-black font-bold">
       <p class="">{{ state.title }}</p>
     </div>
     <audio
