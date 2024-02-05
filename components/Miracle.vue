@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex sm:h-[50px] h-[60px] w-[calc(100vw-40px)] items-center gap-[10px] rounded-[10px] !bg-[#ffd438] p-[5px] sm:w-[400px] [box-shadow:3px_3px_10px_#0000007f]"
+    class="flex h-[60px] w-[calc(100vw-40px)] items-center gap-[10px] rounded-[10px] !bg-[#ffd438] p-[5px] [box-shadow:3px_3px_10px_#0000007f] sm:h-[50px] sm:w-[400px]"
   >
     <div
       class="aspect-square h-full overflow-hidden rounded-[7px] bg-fuchsia-200"
@@ -11,7 +11,7 @@
         :alt="state.title"
       />
     </div>
-    <div class="flex flex-1 flex-col text-[.7rem] text-black font-bold">
+    <div class="flex flex-1 flex-col text-[.7rem] font-bold text-black">
       <p class="">{{ state.title }}</p>
     </div>
     <audio
@@ -19,13 +19,14 @@
       controls
       class="hidden"
       src="/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3"
+      :autoplay="false"
     />
     <canvas ref="canvasRef" class="hidden h-[25px] w-[100px] sm:block" />
     <div class="mr-[5px] flex gap-[10px] *:cursor-pointer">
       <!-- <div>{{ '<' }}</div> -->
-      <div @click="togglePlay" class="*:w-[20px] [*>path]:fill-black">
+      <div @click="togglePlay" class="[*>path]:fill-black *:w-[20px]">
         <svg
-          v-if="state.isPlay"
+          v-if="!state.isPlay"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
@@ -77,12 +78,13 @@ const state = reactive({
 });
 
 const start = () => {
-  state.isPlay = !audioEl.value?.paused
   if (!audioEl.value?.paused) {
     audioEl.value?.pause();
+    state.isPlay = false;
     return;
   }
   audioEl.value?.play();
+  state.isPlay = true;
 
   const audioContext = new AudioContext();
 
