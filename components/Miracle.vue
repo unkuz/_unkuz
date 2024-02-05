@@ -23,7 +23,6 @@
     />
     <canvas ref="canvasRef" class="h-[25px] w-[100px] sm:w-[120px]" />
     <div class="mr-[5px] flex gap-[10px] *:cursor-pointer">
-      <!-- <div>{{ '<' }}</div> -->
       <div @click="togglePlay" class="[*>path]:fill-black *:w-[20px]">
         <svg
           v-if="!state.isPlay"
@@ -50,8 +49,6 @@
           />
         </svg>
       </div>
-      <!-- <div>{{ '>' }}</div>
-      <div>{{ '?' }}</div> -->
     </div>
   </div>
 </template>
@@ -59,16 +56,18 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import axios from 'axios';
+import { useMagicKeys } from '@vueuse/core';
 
 const audioEl = ref<HTMLMediaElement>();
 const canvasRef = ref<HTMLCanvasElement>();
 const analyser = ref<AnalyserNode>();
 const audioSource = ref<MediaElementAudioSourceNode>();
 const ctxCanvas = ref<any>(null);
+const { space } = useMagicKeys();
 
-onMounted(() => {
-  ctxCanvas.value = canvasRef.value!.getContext('2d');
-});
+watch(space, (v) => v && togglePlay());
+
+onMounted(() => (ctxCanvas.value = canvasRef.value!.getContext('2d')));
 
 const state = reactive({
   track: new Audio(),
@@ -77,7 +76,7 @@ const state = reactive({
   isPlay: false,
 });
 
-const start = () => {
+const togglePlay = () => {
   if (!audioEl.value?.paused) {
     audioEl.value?.pause();
     state.isPlay = false;
@@ -158,13 +157,6 @@ onMounted(async () => {
   state.title = data.title;
   state.thumbnail = data.thumbnail;
 });
-
-const togglePlay = () => {
-  start();
-  //   const isPaused = state.track.paused;
-  //   isPaused ? state.track.play() : state.track.pause();
-  //   state.isPlay = !isPaused;
-};
 </script>
 
 <style scoped></style>
