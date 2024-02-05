@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-[60px] w-[calc(100vw-40px)] items-center gap-[10px] rounded-[10px] !bg-[#ffd438] p-[5px] [box-shadow:3px_3px_10px_#0000007f] sm:h-[50px] sm:w-[400px]"
+    class="flex h-[60px] w-[calc(100vw-40px)] items-center gap-[10px] rounded-[10px] !bg-[#34d0ff] p-[5px] [box-shadow:3px_3px_10px_#0000007f] sm:h-[50px] sm:w-[400px]"
   >
     <div
       class="aspect-square h-full overflow-hidden rounded-[7px] bg-fuchsia-200"
@@ -12,7 +12,7 @@
       />
     </div>
     <div class="flex flex-1 flex-col text-[.7rem] font-bold text-black">
-      <p class="">{{ state.title }}</p>
+      <p class="line-clamp-2">{{ state.title }}</p>
     </div>
     <audio
       ref="audioEl"
@@ -21,7 +21,7 @@
       src="/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3"
       :autoplay="false"
     />
-    <canvas ref="canvasRef" class="hidden h-[25px] w-[100px] sm:block" />
+    <canvas ref="canvasRef" class="h-[25px] w-[100px] sm:w-[120px]" />
     <div class="mr-[5px] flex gap-[10px] *:cursor-pointer">
       <!-- <div>{{ '<' }}</div> -->
       <div @click="togglePlay" class="[*>path]:fill-black *:w-[20px]">
