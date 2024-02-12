@@ -20,7 +20,7 @@ const magicName = (selectedPath: string, routePath: string, name: string) =>
     >
       <NuxtLink to="/" replace>
         <Unkuz
-          class="!mb-0 !h-auto !w-[35px] sm:!w-[40px] [&>path]:!fill-none"
+          class="!mb-0 !h-auto !w-[35px] dark:invert sm:!w-[40px] [&>path]:!fill-none"
         />
         <!-- <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div> -->
       </NuxtLink>
