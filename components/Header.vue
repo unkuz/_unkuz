@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { navigation } from '@/config/app';
+import Unkuz from '@/assets/svg/logo.svg';
 import TextRolling from '@/components/TextRolling.vue';
 
 const route = useRoute();
@@ -18,7 +19,10 @@ const magicName = (selectedPath: string, routePath: string, name: string) =>
       class="flex items-center gap-[10px] py-[20px] font-au sm:py-0"
     >
       <NuxtLink to="/" replace>
-        <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div>
+        <Unkuz
+          class="!mb-0 !h-auto !w-[35px] sm:!w-[40px] [&>path]:!fill-none"
+        />
+        <!-- <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div> -->
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
