@@ -6,7 +6,7 @@
 
     <NuxtImg
       :src="dogEyesRight ? '/doge_right.png' : '/doge_left.png'"
-      class="sm:w-[170px] w-[200px] object-cover"
+      class="w-[200px] object-cover sm:w-[170px]"
     />
     <div>{{ textUpdate }}</div>
   </div>
