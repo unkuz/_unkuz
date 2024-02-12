@@ -192,8 +192,22 @@ const { space } = useMagicKeys();
 
 watch(space, (v) => v && togglePlay());
 
-onMounted(() => {
+onMounted(async () => {
   ctxCanvas.value = canvasRef.value!.getContext('2d');
+
+  audioEl.value!.onended = function () {
+    state.isPlay = false;
+  };
+  const res = await axios.post('/api/proxy-yt', {
+    url: 'https://www.youtube.com/watch?v=oX4uaarflA4&list=RDMM&index=2',
+  });
+  const data = res.data;
+
+  isReady.value = true;
+
+  state.track.src = '/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3';
+  state.title = data.title;
+  state.thumbnail = data.thumbnail;
 });
 
 const state = reactive({
@@ -273,19 +287,6 @@ const togglePlay = () => {
 
   animate();
 };
-
-onMounted(async () => {
-  const res = await axios.post('/api/proxy-yt', {
-    url: 'https://www.youtube.com/watch?v=oX4uaarflA4&list=RDMM&index=2',
-  });
-  const data = res.data;
-
-  isReady.value = true;
-
-  state.track.src = '/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3';
-  state.title = data.title;
-  state.thumbnail = data.thumbnail;
-});
 </script>
 
 <style scoped></style>
