@@ -35,7 +35,22 @@ export default defineNuxtConfig({
       background_color: '#000',
       icons: [
         {
+          src: 'icon-48x48.png',
+          sizes: '96x96',
+          type: 'image/png',
+        },
+        {
+          src: 'icon-72x72.png',
+          sizes: '96x96',
+          type: 'image/png',
+        },
+        {
           src: 'icon-96x96.png',
+          sizes: '96x96',
+          type: 'image/png',
+        },
+        {
+          src: 'icon-144x144.png',
           sizes: '96x96',
           type: 'image/png',
         },
