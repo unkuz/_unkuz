@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         cuz: 'Cuz',
         au: 'August',
+        ['space-mono']: 'SpaceMono',
       },
       keyframes: {
         loading: {
