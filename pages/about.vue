@@ -2,11 +2,11 @@
   <div
     class="flex min-h-screen w-full flex-col items-center justify-center gap-[20px] py-[100px] sm:mx-auto sm:w-[500px]"
   >
-    <h1 class="text-[1rem] uppercase">&gt; About</h1>
+    <h1 class="text-[1rem] uppercase">&gt;About</h1>
     <div class="">
       <p class="text-balance text-justify indent-8">
-        > Unkuz, also known as Nguyen Ba Cuong, is a creative web developer with
-        2.5+ years of experience working in building website. Proficient in
+        &gt;Unkuz, also known as Nguyen Ba Cuong, is a creative web developer
+        with 2.5+ years of experience working in building website. Proficient in
         HTML, CSS, JavaScript, TypeScript, Python,...: plus modern libraries,
         frameworks and mastering the latest front-end technologies. Well-versed
         in requirements aith an in-depth knowledge. I'm currently working in
@@ -114,7 +114,7 @@
         </div>
       </div>
       <p class="text-balance text-justify indent-8">
-        > Besides being a software engineer, I am also quite interested in
+        &gt;Besides being a software engineer, I am also quite interested in
         becoming a music producer. In recent months, I've been inspired by the
         future bounce music genre. Producers who inspire me at the moment are:
         rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024
