@@ -8,11 +8,10 @@
         &gt;Unkuz, also known as Nguyen Ba Cuong, is a creative web developer
         with 2.5+ years of experience working in building website. Proficient in
         HTML, CSS, JavaScript, TypeScript, Python,...: plus modern libraries,
-        frameworks and mastering the latest front-end technologies. Well-versed
-        in requirements aith an in-depth knowledge. I'm currently working in
-        Hanoi as a Software Engineering, while also taking on freelance projects
-        that pique my interest. Here is the list of technologies that I have
-        experience with:
+        frameworks. Well-versed in requirements aith an in-depth knowledge. I'm
+        currently working in Hanoi as a Software Engineering, while also taking
+        on freelance projects that pique my interest. Here is the list of
+        technologies that I have experience with:
       </p>
 
       <div
