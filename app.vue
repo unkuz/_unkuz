@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import SwipeCtx from '@/ctx/SwipeCtx.vue';
-import CustomScrollbar from 'custom-vue-scrollbar';
 
 useSyncDarkMode();
 const { isMobile } = useDevice();
@@ -10,7 +9,7 @@ const transitionDuration = computed(() => (isMobile ? '0s' : '0.3s'));
 <template>
   <AppStyle>
     <VitePwaManifest />
-    <CustomScrollbar
+    <CustomScrollbarZ
       :style="{ width: '100vw', height: '100vh' }"
       :thumbWidth="6"
       :autoExpand="false"
@@ -21,7 +20,7 @@ const transitionDuration = computed(() => (isMobile ? '0s' : '0.3s'));
           <NuxtPage />
         </SwipeCtx>
       </NuxtLayout>
-    </CustomScrollbar>
+    </CustomScrollbarZ>
   </AppStyle>
 </template>
 
