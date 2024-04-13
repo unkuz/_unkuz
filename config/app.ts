@@ -11,8 +11,8 @@ export const navigation = [
     name: 'contact',
     path: '/contact',
   },
-  {
-    name: 'resume',
-    path: '/resume',
-  },
+  // {
+  //   name: 'resume',
+  //   path: '/resume',
+  // },
 ];
