@@ -22,15 +22,16 @@ const magicName = (selectedPath: string, routePath: string, name: string) =>
         <Unkuz
           class="!mb-0 !h-auto !w-[35px] dark:invert [&>path]:!fill-none"
         />
+        <!-- <div :class="['select-none text-[1.7rem] tracking-widest']">UNKUZ</div> -->
       </NuxtLink>
     </div>
     <div class="flex gap-[20px] [&>div]:hover:cursor-pointer">
       <NightMode @click="globalS.toggleDarkMode" />
       <NuxtLink
-        v-for="({ path }, idx) in navigation"
-        :to="path"
+        v-for="(i, idx) in navigation"
+        :to="i.path"
         :key="idx"
-        class=""
+        class="last:md:block"
         replace
       >
         <div
