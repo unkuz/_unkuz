@@ -14,7 +14,7 @@
       ]"
     >
       <div
-        class="aspect-square h-full overflow-hidden rounded-[7px] bg-fuchsia-200"
+        class="aspect-square h-full overflow-hidden rounded-[7px]"
       >
         <img
           :src="state.thumbnail"
@@ -29,7 +29,7 @@
         ref="audioEl"
         controls
         class="hidden"
-        src="/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3"
+        src="/Di Young - Pixel Pig (Ahmad Irfan Remix) [i3RgYbEOABk].mp3"
         :autoplay="false"
       />
       <canvas ref="canvasRef" class="h-[25px] w-[100px] sm:w-[120px]" />
@@ -199,15 +199,15 @@ onMounted(async () => {
     state.isPlay = false;
   };
   const res = await axios.post('/api/proxy-yt', {
-    url: 'https://www.youtube.com/watch?v=oX4uaarflA4&list=RDMM&index=2',
+    url: 'https://youtu.be/i3RgYbEOABk?list=RDi3RgYbEOABk',
   });
   const data = res.data;
 
   isReady.value = true;
 
-  state.track.src = '/Ball VRP & Novel Soul - Fake Colors (128 kbps).mp3';
+  state.track.src = '/Di Young - Pixel Pig (Ahmad Irfan Remix) [i3RgYbEOABk].mp3';
   state.title = data.title;
-  state.thumbnail = data.thumbnail;
+  state.thumbnail = "https://64.media.tumblr.com/bc63289eea46b6a7d03e08ab3d4cb494/tumblr_mhjyzsQfYU1rfjowdo1_500.gif";
 });
 
 const state = reactive({
