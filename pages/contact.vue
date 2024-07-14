@@ -43,6 +43,16 @@
           class="!size-[17px] [&>path]:!fill-transparent dark:[&>path]:stroke-white"
         />
       </NuxtLink>
+      <NuxtLink
+        to="https://www.youtube.com/@unkuz."
+        title="Yotube"
+        target="_blank"
+        external
+      >
+        <Youtube
+          class="!size-[17px]"
+        />
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -53,4 +63,6 @@ import Instagram_invert from '@/assets/svg/instagram_invert.svg';
 import Twitter_invert from '@/assets/svg/twitter_invert.svg';
 import Github_invert from '@/assets/svg/github_invert.svg';
 import Gumroad from '@/assets/svg/gumroad.svg';
+import Youtube from '@/assets/svg/yt.svg';
+
 </script>
