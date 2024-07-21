@@ -112,13 +112,6 @@
           </NuxtLink>
         </div>
       </div>
-      <p class="text-balance text-justify indent-8">
-        &gt;Besides being a software engineer, I am also quite interested in
-        becoming a music producer. In recent months, I've been inspired by the
-        future bounce music genre. Producers who inspire me at the moment are:
-        rentz, bayze, bad reputation, dirty palm, ball vrp,...Hopefully in 2024
-        I can release a song sound something similar 🤣
-      </p>
     </div>
   </div>
 </template>
