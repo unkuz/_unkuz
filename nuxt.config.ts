@@ -114,7 +114,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Unkuz - Web developer, upcoming Music Producer based in Vietnam',
+            'Unkuz - Web developer based in Vietnam',
         },
       ],
     },
