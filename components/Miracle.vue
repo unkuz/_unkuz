@@ -199,7 +199,7 @@ onMounted(async () => {
     state.isPlay = false;
   };
   const res = await axios.post('/api/proxy-yt', {
-    url: 'https://youtu.be/i3RgYbEOABk?list=RDi3RgYbEOABk',
+    url: 'https://youtu.be/i3RgYbEOABk',
   });
   const data = res.data;
 
