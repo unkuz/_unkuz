@@ -79,7 +79,7 @@ watch(appReady, (val) => {
       <div
         class="fixed bottom-[20px] right-1/2 translate-x-1/2 sm:bottom-[50px] sm:right-[100px] sm:translate-x-0"
       >
-        <Miracle />
+        
       </div>
     </div>
   </div>
