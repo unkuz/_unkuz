@@ -198,15 +198,15 @@ onMounted(async () => {
   audioEl.value!.onended = function () {
     state.isPlay = false;
   };
-  const res = await axios.post('/api/proxy-yt', {
-    url: 'https://youtu.be/i3RgYbEOABk',
-  });
-  const data = res.data;
+  // const res = await axios.post('/api/proxy-yt', {
+  //   url: 'https://youtu.be/i3RgYbEOABk',
+  // });
+  // const data = res.data;
 
   isReady.value = true;
 
   state.track.src = '/Di Young - Pixel Pig (Ahmad Irfan Remix) [i3RgYbEOABk].mp3';
-  state.title = data.title;
+  state.title = 'Di Young - Pixel Pig (Ahmad Irfan Remix)';
   state.thumbnail = "https://64.media.tumblr.com/bc63289eea46b6a7d03e08ab3d4cb494/tumblr_mhjyzsQfYU1rfjowdo1_500.gif";
 });
 
