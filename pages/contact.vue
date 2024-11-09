@@ -10,29 +10,6 @@
       <a class="text-center" href="tel:+84888388859">+84 888388859</a>
     </div>
     <div class="mt-[10px] flex gap-[20px] [&>svg]:cursor-pointer">
-      <div title="I'm not available">
-        <Facebook_invert class="!size-[17px] cursor-not-allowed" />
-      </div>
-
-      <div title="I'm not available">
-        <Twitter_invert class="!size-[17px] cursor-not-allowed" />
-      </div>
-      <NuxtLink
-        to="https://unkuz.gumroad.com/"
-        title="Gumroad"
-        target="_blank"
-        external
-      >
-        <Gumroad class="!size-[17px]" />
-      </NuxtLink>
-      <NuxtLink
-        to="https://www.instagram.com/unkuz"
-        title="Instagram"
-        target="_blank"
-        external
-      >
-        <Instagram_invert class="!size-[17px]" />
-      </NuxtLink>
       <NuxtLink
         to="https://github.com/unkuz"
         title="Github"
@@ -44,14 +21,29 @@
         />
       </NuxtLink>
       <NuxtLink
+        to="https://www.instagram.com/unkuz"
+        title="Instagram"
+        target="_blank"
+        external
+      >
+        <Instagram_invert class="!size-[17px]" />
+      </NuxtLink>
+      <NuxtLink
+        to="https://unkuz.gumroad.com/"
+        title="Gumroad"
+        target="_blank"
+        external
+      >
+        <Gumroad class="!size-[17px]" />
+      </NuxtLink>
+
+      <NuxtLink
         to="https://www.youtube.com/@unkuz."
         title="Yotube"
         target="_blank"
         external
       >
-        <Youtube
-          class="!size-[17px]"
-        />
+        <Youtube class="!size-[17px]" />
       </NuxtLink>
     </div>
   </div>
@@ -64,5 +56,4 @@ import Twitter_invert from '@/assets/svg/twitter_invert.svg';
 import Github_invert from '@/assets/svg/github_invert.svg';
 import Gumroad from '@/assets/svg/gumroad.svg';
 import Youtube from '@/assets/svg/yt.svg';
-
 </script>
