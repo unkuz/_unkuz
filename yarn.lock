@@ -6742,7 +6742,7 @@ nuxt-typed-router@^3.5.1:
     pathe "1.1.2"
     prettier "3.3.3"
 
-nuxt@^3.14.159:
+nuxt@^3.8.2:
   version "3.14.159"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.14.159.tgz#3c1c70ded8bd302457c86f3250af3ccc3389ad03"
   integrity sha512-1xz6AfFkun+byUIkBNX3/CTOTShPRFJe0y9HqWZX2aV9xdoz5ByeaHZfktokhOOSbvabjDyzkTbbHh3V673qHw==
