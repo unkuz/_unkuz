@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     '@vite-pwa/nuxt',
     '@nuxtjs/tailwindcss',
@@ -14,14 +15,18 @@ export default defineNuxtConfig({
     'nuxt-typed-router',
     '@nuxtseo/module',
   ],
+
   components: {
     dirs: ['~/components', '~/composables', '~/ctx', '~/utils'],
   },
+
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
   },
+
   css: ['~/scss/main.scss'],
+
   pwa: {
     scope: '/',
     base: '/',
@@ -102,6 +107,7 @@ export default defineNuxtConfig({
       type: 'module',
     },
   },
+
   app: {
     head: {
       meta: [
@@ -121,9 +127,11 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'default' },
     layoutTransition: { name: 'layout', mode: 'default' },
   },
+
   image: {
     format: ['webp'],
   },
+
   lodash: {
     prefix: '_',
     prefixSkip: ['string'],
@@ -135,14 +143,19 @@ export default defineNuxtConfig({
       ['isDate', 'isLodashDate'], // => _isLodashDate
     ],
   },
+
   piniaPersistedstate: {
     cookieOptions: {
       sameSite: 'strict',
     },
     storage: 'localStorage',
   },
+
   plugins: [{ src: '~/plugins/scrollbar', mode: 'client' }],
+
   site: {
     name: 'Unkuz',
   },
+
+  compatibilityDate: '2024-11-09',
 });
