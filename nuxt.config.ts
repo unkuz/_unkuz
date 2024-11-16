@@ -119,8 +119,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'description',
-          content:
-            'Unkuz - Web developer based in Vietnam',
+          content: 'Unkuz - Web developer based in Vietnam',
         },
       ],
     },
@@ -156,6 +155,4 @@ export default defineNuxtConfig({
   site: {
     name: 'Unkuz',
   },
-
-  compatibilityDate: '2024-11-09',
 });
