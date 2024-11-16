@@ -17,7 +17,7 @@ const transitionDuration = computed(() => (isMobile ? '0s' : '0.3s'));
     >
       <NuxtLayout>
         <SwipeCtx>
-          <RouterView />
+          <NuxtPage />
         </SwipeCtx>
       </NuxtLayout>
     </CustomScrollbarZ>
