@@ -28,14 +28,6 @@
       >
         <Instagram_invert class="!size-[17px]" />
       </NuxtLink>
-      <NuxtLink
-        to="https://unkuz.gumroad.com/"
-        title="Gumroad"
-        target="_blank"
-        external
-      >
-        <Gumroad class="!size-[17px]" />
-      </NuxtLink>
 
       <NuxtLink
         to="https://www.youtube.com/@unkuz."
