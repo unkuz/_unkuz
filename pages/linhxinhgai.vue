@@ -25,7 +25,7 @@
           </svg>
         </NuxtLink>
       </p>
-      <div class="flex w-full flex-col gap-[2px] items-end">
+      <div class="flex w-full flex-col gap-[5px] items-end">
         <div class="flex w-full justify-end">
           <span
             class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-bottom-right-radius:5px] text-black"
@@ -47,6 +47,12 @@
         />
 
         <div class="flex w-full justify-end">
+          <span
+            class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:10px] [border-bottom-right-radius:10px] text-black"
+            >choi oi, nhac hay</span
+          >
+        </div>
+        <div class="flex w-full justify-end">
           <NuxtLink
             to="https://youtu.be/u-Vs1Co9yMU?list=RDu-Vs1Co9yMU"
             target="_blank"
@@ -57,12 +63,12 @@
           </NuxtLink>
         </div>
       </div>
-      <button
+      <div
         @click="onClickUnblock"
-        class="bg-[#790ded] line-clamp-1 w-[300px] h-[45px] rounded-2xl absolute bottom-[20px] right-1/2 translate-x-1/2"
+        class="bg-[#790ded] flex justify-center items-center w-[300px] h-[45px] rounded-2xl absolute bottom-[30px] right-1/2 translate-x-1/2"
       >
-        <span> Bỏ chặn </span>
-      </button>
+        <p>Bỏ chặn</p>
+      </div>
     </div>
   </div>
 </template>
