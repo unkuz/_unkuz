@@ -69,7 +69,14 @@ const otherPage = computed(() =>
 </script>
 
 <template>
-  <div class="relative text-[.9rem] dark:bg-black dark:text-white">
+  <div
+    :class="[
+      'relative text-[.9rem] dark:bg-black dark:text-white',
+      {
+        '!bg-[floralwhite]': otherPage,
+      },
+    ]"
+  >
     <SpeedInsights />
     <div ref="ani" class="fixed left-0 top-0 z-[60] translate-x-[150%]">
       <Ani filled class="!h-screen !w-auto dark:[&_path]:fill-white" />
