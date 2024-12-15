@@ -6,9 +6,9 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/seo",
-    "@vite-pwa/nuxt",
+    // "@vite-pwa/nuxt",
     "@vueuse/nuxt",
-    "nuxt-typed-router",
+    // "nuxt-typed-router",
     "@pinia/nuxt",
     "nuxt-lodash",
     "@nuxt/image",
@@ -30,87 +30,6 @@ export default defineNuxtConfig({
     viewer: true,
   },
   css: ["~/scss/main.scss"],
-  pwa: {
-    scope: "/",
-    base: "/",
-    injectRegister: "auto",
-    registerType: "autoUpdate",
-    manifest: {
-      name: "Unkuz",
-      short_name: "Unkuz",
-      description: "Unkuz",
-      theme_color: "#000",
-      background_color: "#000",
-      icons: [
-        {
-          src: "icon-48x48.png",
-          sizes: "96x96",
-          type: "image/png",
-        },
-        {
-          src: "icon-72x72.png",
-          sizes: "96x96",
-          type: "image/png",
-        },
-        {
-          src: "icon-96x96.png",
-          sizes: "96x96",
-          type: "image/png",
-        },
-        {
-          src: "icon-144x144.png",
-          sizes: "96x96",
-          type: "image/png",
-        },
-        {
-          src: "icon-192x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "icon-512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "any",
-        },
-      ],
-    },
-    registerWebManifestInRouteRules: true,
-    workbox: {
-      navigateFallback: undefined,
-      cleanupOutdatedCaches: true,
-      globPatterns: [
-        "**/*.{json,ico,svg,ttf,woff,css,scss,js,html,txt,jpg,png,woff2,mjs,otf,ani}",
-      ],
-      runtimeCaching: [
-        {
-          urlPattern: "/",
-          handler: "NetworkFirst",
-        },
-        {
-          urlPattern: /^https:\/\/api\.mapbox\.com\/.*/i,
-          handler: "CacheFirst",
-          options: {
-            cacheName: "mapbox-cache",
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-      ],
-    },
-    client: {
-      installPrompt: false,
-      periodicSyncForUpdates: 20, //seconds
-    },
-    devOptions: {
-      enabled: true,
-      suppressWarnings: false,
-      navigateFallback: "index.html",
-      type: "module",
-    },
-  },
-
   app: {
     head: {
       meta: [

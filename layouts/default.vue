@@ -3,16 +3,21 @@ import { SpeedInsights } from "@vercel/speed-insights/vue";
 import Header from "@/components/Header.vue";
 import { gsap } from "gsap";
 import Ani from "@/assets/svg/ani.svg";
+import { uGlobalS } from "~/stores/global";
 
 const ani = ref<HTMLDivElement | null>(null);
 const pre = ref<HTMLDivElement | null>(null);
 const main = ref<HTMLDivElement | null>(null);
 
 const { appReady } = storeToRefs(uGlobalS());
+const globalS = uGlobalS();
+
+const route = useRoute();
+console.log("object, route");
 
 const { isMobile } = useDevice();
 
-watch(appReady, (val) => {
+watch(appReady, async (val) => {
   if (val) {
     if (isMobile) {
       setTimeout(() => {
@@ -57,6 +62,8 @@ watch(appReady, (val) => {
     }, 2_500);
   }
 });
+
+const otherPage = computed(() => route.fullPath === "/linhxinhgai");
 </script>
 
 <template>
@@ -69,17 +76,17 @@ watch(appReady, (val) => {
       ref="pre"
       class="flex !h-screen !w-screen select-none items-center justify-center font-au text-[2.5rem] tracking-widest"
     >
-      UNKUZ
+      {{ otherPage ? "" : "UNKUZ" }}
     </div>
     <div ref="main" class="mx-auto hidden w-full px-[20px] md:px-0">
-      <Header />
-      <div class="mx-auto sm:w-[700px]">
+      <Header v-if="!otherPage" />
+      <div class="mx-auto sm:w-[620px] lg:w-[900px]">
         <slot />
       </div>
       <div
-        class="fixed bottom-[20px] right-1/2 translate-x-1/2 sm:bottom-[50px] sm:right-[100px] sm:translate-x-0"
+        class="fixed bottom-[20px] right-1/2 translate-x-1/2 sm:bottom-[50px]"
       >
-        <Miracle />
+        <Miracle v-if="!otherPage" />
       </div>
     </div>
   </div>
