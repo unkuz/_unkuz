@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import Star from '@/assets/svg/star.svg';
+import Star from "@/assets/svg/star.svg";
 </script>
 
 <template>
   <div
-    class="relative h-[20px] w-[35px] overflow-hidden rounded-[calc(25px/2)] bg-[#34d0ff] dark:bg-[#4e4e4e]"
+    class="relative h-[20px] w-[35px] overflow-hidden rounded-[calc(25px/2)] bg-[#34d0ff] dark:bg-[#4e4e4e] cursor-pointer"
   >
     <div
       :class="[
@@ -22,11 +22,11 @@ import Star from '@/assets/svg/star.svg';
     ></div>
     <Star
       filled
-      class="absolute -top-[20px] left-[35px] !h-[5px] !w-[5px] fill-white duration-200 dark:left-[5px] dark:top-[3px]"
+      class="absolute cursor-pointer -top-[20px] left-[35px] !h-[5px] !w-[5px] fill-white duration-200 dark:left-[5px] dark:top-[3px]"
     />
     <Star
       filled
-      class="absolute -top-[20px] left-[35px] !h-[4px] !w-[4px] fill-white duration-200 dark:left-[8px] dark:top-[12px]"
+      class="absolute -top-[20px] cursor-pointer left-[35px] !h-[4px] !w-[4px] fill-white duration-200 dark:left-[8px] dark:top-[12px]"
     />
   </div>
 </template>

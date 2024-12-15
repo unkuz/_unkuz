@@ -9,12 +9,13 @@
       >
       <a class="text-center" href="tel:+84888388859">+84 888388859</a>
     </div>
-    <div class="mt-[10px] flex gap-[20px] [&>svg]:cursor-pointer">
+    <div class="mt-[10px] flex gap-[40px]">
       <NuxtLink
         to="https://github.com/unkuz"
         title="Github"
         target="_blank"
         external
+        class="cursor-pointer"
       >
         <Github_invert
           class="!size-[17px] [&>path]:!fill-transparent dark:[&>path]:stroke-white"
@@ -25,6 +26,7 @@
         title="Instagram"
         target="_blank"
         external
+        class="cursor-pointer"
       >
         <Instagram_invert class="!size-[17px]" />
       </NuxtLink>
@@ -34,6 +36,7 @@
         title="Yotube"
         target="_blank"
         external
+        class="cursor-pointer"
       >
         <Youtube class="!size-[17px]" />
       </NuxtLink>
