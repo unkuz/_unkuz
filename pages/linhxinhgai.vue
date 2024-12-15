@@ -1,9 +1,30 @@
 <template>
   <div class="bg-[floralwhite] fixed top-0 left-0 w-screen">
+    <Vue3Lottie
+      :animationData="luv"
+      class="fixed w-screen h-screen z-20 scale-[2.5] sm:scale-[2]"
+      v-if="showHeartDrop"
+      :loop="false"
+    />
+
     <div
-      class="min-h-screen w-full lg:w-[900px] sm:w-[620px] mx-auto p-[5px] sm:p-0"
+      class="min-h-screen w-full sm:w-[500px] mx-auto p-[5px] bg-[#000000] relative"
     >
-      <p class="h-[50px]"></p>
+      <p class="h-[60px] w-full flex items-center">
+        <NuxtLink to="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m10.828 12l4.95 4.95l-1.414 1.415L8 12l6.364-6.364l1.414 1.414z"
+            />
+          </svg>
+        </NuxtLink>
+      </p>
       <div class="flex w-full flex-col gap-[2px] items-end">
         <div class="flex w-full justify-end">
           <span
@@ -14,7 +35,7 @@
         </div>
         <div class="flex w-full justify-end">
           <span
-            class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:5px] text-black"
+            class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:10px] [border-bottom-right-radius:10px] text-black"
             >e bo chan a di</span
           >
         </div>
@@ -24,22 +45,39 @@
           class="w-[100px] object-cover inline-block"
           :alt="''"
         />
-      </div>
 
-      <iframe
-        class="w-full aspect-[16/9] mt-[50px]"
-        src="https://www.youtube.com/embed/u-Vs1Co9yMU?si=G7OyhI-4n2obBu3c"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        <div class="flex w-full justify-end">
+          <NuxtLink
+            to="https://youtu.be/u-Vs1Co9yMU?list=RDu-Vs1Co9yMU"
+            target="_blank"
+            external
+            class="cursor-pointer py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:5px] text-[black] underline"
+          >
+            Jay Key - Supperherro
+          </NuxtLink>
+        </div>
+      </div>
+      <button
+        @click="onClickUnblock"
+        class="bg-[#790ded] line-clamp-1 w-[300px] h-[45px] rounded-2xl absolute bottom-[20px] right-1/2 translate-x-1/2"
+      >
+        <span> Bỏ chặn </span>
+      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import luv from "@/assets/lotties/luv.lotties.json";
+const showHeartDrop = ref(false);
+
+const onClickUnblock = () => {
+  showHeartDrop.value = true;
+  setTimeout(() => {
+    showHeartDrop.value = false;
+  }, 3000);
+};
+
 onMounted(() => {
   console.log(document);
   // Function to create a marquee effect on the document title
