@@ -1,7 +1,9 @@
 <template>
   <div class="bg-[floralwhite] fixed top-0 left-0 w-screen">
-    <div class="min-h-screen w-full lg:w-[900px] sm:w-[620px] mx-auto">
-      <p class="h-[100px]"></p>
+    <div
+      class="min-h-screen w-full lg:w-[900px] sm:w-[620px] mx-auto p-[5px] sm:p-0"
+    >
+      <p class="h-[50px]"></p>
       <div class="flex w-full flex-col gap-[2px] items-end">
         <div class="flex w-full justify-end">
           <span
@@ -25,7 +27,7 @@
       </div>
 
       <iframe
-        class="w-screen sm:w-full aspect-[16/9] translate-x-[-20px] sm:translate-x-0 mt-[50px]"
+        class="w-full aspect-[16/9] mt-[50px]"
         src="https://www.youtube.com/embed/u-Vs1Co9yMU?si=G7OyhI-4n2obBu3c"
         title="YouTube video player"
         frameborder="0"
