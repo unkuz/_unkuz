@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { SpeedInsights } from '@vercel/speed-insights/vue';
-import Header from '@/components/Header.vue';
-import { gsap } from 'gsap';
-import Ani from '@/assets/svg/ani.svg';
+import { SpeedInsights } from "@vercel/speed-insights/vue";
+import Header from "@/components/Header.vue";
+import { gsap } from "gsap";
+import Ani from "@/assets/svg/ani.svg";
 
 const ani = ref<HTMLDivElement | null>(null);
 const pre = ref<HTMLDivElement | null>(null);
@@ -17,10 +17,10 @@ watch(appReady, (val) => {
     if (isMobile) {
       setTimeout(() => {
         gsap.set(pre.value, {
-          display: 'none',
+          display: "none",
         });
         gsap.set(main.value, {
-          display: 'block',
+          display: "block",
         });
       }, 3_000);
       return;
@@ -30,29 +30,29 @@ watch(appReady, (val) => {
 
     setTimeout(() => {
       tl.set(ani.value, {
-        translateX: '100%',
+        translateX: "100%",
       })
         .set(pre.value, {
-          display: 'flex',
+          display: "flex",
         })
         .set(main.value, {
-          display: 'none',
+          display: "none",
         })
         .to(ani.value, {
-          translateX: '0%',
+          translateX: "0%",
           duration: 0.5,
-          ease: 'linear',
+          ease: "linear",
         })
         .set(pre.value, {
-          display: 'none',
+          display: "none",
         })
         .set(main.value, {
-          display: 'block',
+          display: "block",
         })
         .to(ani.value, {
-          translateX: '-100%',
+          translateX: "-100%",
           duration: 0.5,
-          ease: 'linear',
+          ease: "linear",
         });
     }, 2_500);
   }

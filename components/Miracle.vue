@@ -13,9 +13,7 @@
         { 'hidden ': !isReady },
       ]"
     >
-      <div
-        class="aspect-square h-full overflow-hidden rounded-[7px]"
-      >
+      <div class="aspect-square h-full overflow-hidden rounded-[7px]">
         <img
           :src="state.thumbnail"
           class="h-full w-full object-cover"
@@ -177,9 +175,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import axios from 'axios';
-import { useMagicKeys } from '@vueuse/core';
+import { onMounted } from "vue";
+import axios from "axios";
+import { useMagicKeys } from "@vueuse/core";
 
 const isReady = ref(false);
 
@@ -193,7 +191,7 @@ const { space } = useMagicKeys();
 watch(space, (v) => v && togglePlay());
 
 onMounted(async () => {
-  ctxCanvas.value = canvasRef.value!.getContext('2d');
+  ctxCanvas.value = canvasRef.value!.getContext("2d");
 
   audioEl.value!.onended = function () {
     state.isPlay = false;
@@ -205,15 +203,18 @@ onMounted(async () => {
 
   isReady.value = true;
 
-  state.track.src = '/Di Young - Pixel Pig (Ahmad Irfan Remix) [i3RgYbEOABk].mp3';
-  state.title = 'Di Young - Pixel Pig (Ahmad Irfan Remix)';
-  state.thumbnail = "https://64.media.tumblr.com/bc63289eea46b6a7d03e08ab3d4cb494/tumblr_mhjyzsQfYU1rfjowdo1_500.gif";
+  state.track!.src =
+    "/Di Young - Pixel Pig (Ahmad Irfan Remix) [i3RgYbEOABk].mp3";
+  state.title = "Di Young - Pixel Pig (Ahmad Irfan Remix)";
+  state.thumbnail =
+    "https://64.media.tumblr.com/bc63289eea46b6a7d03e08ab3d4cb494/tumblr_mhjyzsQfYU1rfjowdo1_500.gif";
 });
 
+const genTrack = () => (typeof Audio !== "undefined" ? new Audio() : undefined);
 const state = reactive({
-  track: new Audio(),
-  title: '',
-  thumbnail: '',
+  track: genTrack(),
+  title: "",
+  thumbnail: "",
   isPlay: false,
 });
 
@@ -248,20 +249,20 @@ const togglePlay = () => {
       0,
       0,
       canvasRef.value!.width,
-      canvasRef.value!.height,
+      canvasRef.value!.height
     );
     analyser.value!.getByteTimeDomainData(dataArray);
 
-    ctxCanvas.value.fillStyle = 'transparent';
+    ctxCanvas.value.fillStyle = "transparent";
     ctxCanvas.value.fillRect(
       0,
       0,
       canvasRef.value!.width,
-      canvasRef.value!.height,
+      canvasRef.value!.height
     );
 
     ctxCanvas.value.lineWidth = 5;
-    ctxCanvas.value.strokeStyle = 'rgb(0 0 0)';
+    ctxCanvas.value.strokeStyle = "rgb(0 0 0)";
     ctxCanvas.value.beginPath();
 
     const sliceWidth = canvasRef.value!.width / bufferLength;

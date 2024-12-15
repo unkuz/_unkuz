@@ -1,4 +1,6 @@
-export const uGlobalS = defineStore('global', {
+import { defineStore } from "pinia";
+
+export const uGlobalS = defineStore("global", {
   state: () => ({
     darkMode: true,
     appReady: false,
@@ -20,8 +22,5 @@ export const uGlobalS = defineStore('global', {
       }
       this.appReady = true;
     },
-  },
-  persist: {
-    paths: ['darkMode'],
   },
 });
