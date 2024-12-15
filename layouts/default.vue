@@ -76,7 +76,7 @@ const otherPage = computed(() => route.fullPath === "/linhxinhgai");
       ref="pre"
       class="flex !h-screen !w-screen select-none items-center justify-center font-au text-[2.5rem] tracking-widest"
     >
-      {{ otherPage ? "" : "UNKUZ" }}
+      {{ otherPage ? "CHOI OI" : "UNKUZ" }}
     </div>
     <div ref="main" class="mx-auto hidden w-full px-[20px] md:px-0">
       <Header v-if="!otherPage" />
