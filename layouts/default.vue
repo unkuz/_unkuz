@@ -63,7 +63,9 @@ watch(appReady, async (val) => {
   }
 });
 
-const otherPage = computed(() => route.fullPath === "/linhxinhgai");
+const otherPage = computed(() =>
+  ["/linhxinhgai", "/linhxinhgai/"].includes(route.fullPath)
+);
 </script>
 
 <template>
