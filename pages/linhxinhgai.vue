@@ -45,13 +45,6 @@
           class="w-[100px] object-cover inline-block"
           :alt="''"
         />
-
-        <div class="flex w-full justify-end">
-          <span
-            class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:10px] [border-bottom-right-radius:10px] text-black"
-            >choi oi, nhac hay</span
-          >
-        </div>
         <div class="flex w-full justify-end">
           <NuxtLink
             to="https://youtu.be/u-Vs1Co9yMU?list=RDu-Vs1Co9yMU"
