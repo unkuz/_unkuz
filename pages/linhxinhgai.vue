@@ -30,7 +30,7 @@
           <span
             class="py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-bottom-right-radius:5px] text-black"
           >
-            linh oi,e cho a xin loi di ma
+            linh oi, e cho a xin loi di ma
           </span>
         </div>
         <div class="flex w-full justify-end">
