@@ -175,9 +175,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-import axios from "axios";
 import { useMagicKeys } from "@vueuse/core";
+import { onMounted } from "vue";
 
 const isReady = ref(false);
 

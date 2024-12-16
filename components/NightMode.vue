@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-import Star from "@/assets/svg/star.svg";
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div
@@ -20,13 +18,5 @@ import Star from "@/assets/svg/star.svg";
     <div
       class="absolute bottom-[8px] right-[10px] aspect-square h-[15%] rounded-[50%] bg-white duration-200 dark:right-[20px] dark:h-[0%]"
     ></div>
-    <Star
-      filled
-      class="absolute cursor-pointer -top-[20px] left-[35px] !h-[5px] !w-[5px] fill-white duration-200 dark:left-[5px] dark:top-[3px]"
-    />
-    <Star
-      filled
-      class="absolute -top-[20px] cursor-pointer left-[35px] !h-[4px] !w-[4px] fill-white duration-200 dark:left-[8px] dark:top-[12px]"
-    />
   </div>
 </template>
