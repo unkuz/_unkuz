@@ -58,7 +58,7 @@
       </div>
       <div
         @click="onClickUnblock"
-        class="bg-[#790ded] flex justify-center items-center w-[300px] h-[45px] rounded-2xl absolute bottom-[140px] sm:bottom-[30px] right-1/2 translate-x-1/2"
+        class="bg-[#46daff] flex justify-center items-center w-[300px] h-[45px] rounded-2xl absolute bottom-[140px] sm:bottom-[30px] right-1/2 translate-x-1/2"
       >
         <p>Tha lỗi</p>
       </div>
