@@ -52,7 +52,7 @@
             external
             class="cursor-pointer py-[10px] px-[15px] bg-[#46daff] rounded-[20px] [border-top-right-radius:5px] text-[black] underline"
           >
-            Jade Key - Supperherro
+            Jade Key - Superhero
           </NuxtLink>
         </div>
       </div>
