@@ -176,6 +176,7 @@
 
 <script setup lang="ts">
 import { useMagicKeys } from "@vueuse/core";
+
 import { onMounted } from "vue";
 
 const isReady = ref(false);
