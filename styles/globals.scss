@@ -1,0 +1,70 @@
+@import url(./tailwind.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Custom ScrollBar Chrome Opera */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #00b3ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0088;
+}
+/* Custom ScrollBar FireFox */
+:root {
+  scrollbar-color: #00b3ff #ffffff;
+  scrollbar-width: thin;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+.hambuger.active > div:first-child {
+  animation: none;
+  transform: translateY(10px) rotate(45deg);
+}
+.hambuger.active > div:last-child {
+  animation: none;
+  transform: translateY(-10px) rotate(-45deg);
+}
+.hambuger.active > div:nth-child(2) {
+  animation: none;
+  opacity: 0;
+}
+@font-face {
+  font-family: neutra;
+  src: url(../public/Neutra.woff2);
+}
+@font-face {
+  font-family: gt;
+  src: url(../public/GT-Walsheim-Medium-subset.woff2);
+}
+@font-face {
+  font-family: august;
+  src: url(../public/602d0d76ac6fe41e789e0053_august-bold.woff2);
+}
+/* @font-face {
+  font-family: gt;
+  src: url(../public/GT-Walsheim-Regular-subset.woff2);
+} */
+* {
+  font-family: gt;
+  font-size: 16px;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0px;
+  }
+}
